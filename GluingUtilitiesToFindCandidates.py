@@ -46,7 +46,7 @@ len(candidate_C)
 len(candidate_C_cond)
 len(candidate_C_ellrk)
 
-magma.attach("fast_gluing.m")
+# magma.attach("fast_gluing.m")
 
 '''
 goodC = []
@@ -57,8 +57,9 @@ goodE_cond = []
 goodE_rk = []
 '''
 
-foundone = False
-for i in range(len(candidate_C)):
+fil = open('curvesinfo.txt','a')
+# foundone = False
+for i in range(19,len(candidate_C)):
   print(i)
   eqn = candidate_C[i]
   eqn_split = eqn.split("]")
@@ -83,18 +84,23 @@ for i in range(len(candidate_C)):
   if len(goodinds) > 0:
     candidate_E_conds = [L_cond[j] for j in goodinds]
     candidate_E = [L[0][j] for j in goodinds]
+    candidate_E_ainvs = [L[0][j].ainvs() for j in goodinds]
     candidate_E_ranks = [x.analytic_rank() for x in candidate_E]
     print(C, N, candidate_C_ellrk[i])
     print(candidate_E_conds, candidate_E, candidate_E_ranks)
-    for k in range(len(candidate_E)):
-      glue = magma.function_call("AllGeometricGluingsCCEfficient",[candidate_E[k],C,Rationals(),ell])
-      if len(glue) > 0:
-        print(candidate_E[k])
-        foundone = True
-        break
-    else:
-      continue
-    break
+    fil.write(':'.join((str(f), str(h), str(N), str(candidate_C_ellrk[i]), str(candidate_E_conds), str(candidate_E_ainvs), str(candidate_E_ranks), '\n')))
+#    for k in range(len(candidate_E)):
+#      glue = magma.function_call("AllGeometricGluingsCCEfficient",[candidate_E[k],C,Rationals(),ell])
+#      if len(glue) > 0:
+#        print(candidate_E[k])
+#        foundone = True
+#        break
+#    else:
+#      continue
+#    break
+
+fil.close()
+
 
 '''
     goodC.append(C)
@@ -105,4 +111,14 @@ for i in range(len(candidate_C)):
     goodE_rk.append(candidate_E_ranks)
 
 len(goodC)
+'''
+
+'''
+InterfaceError: connection already closed
+sage: print(i)
+18
+sage: print(C)
+Hyperelliptic Curve over Rational Field defined by y^2 + (x^3 + x^2 + 1)*y = -5*x^5 + 9*x^4 - 9*x^2 - 3*x + 6
+sage: print(N)
+51076
 '''
