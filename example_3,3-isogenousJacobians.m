@@ -34,10 +34,17 @@ all_data;
 // [ 28900:28900.a:1781550892102302750:[[58225,17710345,57800,-18091400]]:[[[0,-2,4,-1,-3],[1,1,0,1]]]:[3]:[[-2654975,6651955585,5167377800,-5598689318600],[58225,17710345,57800,-18091400]]:[[[85140,-319781,84841,306026,-903429,-185679,-8148],[1,1,0,1]],[[0,-2,4,-1,-3],[1,1,0,1]]]:[[0,3],[3,0]] ]
 
 
-R<x> := PolynomialRing(QQ);
+R<x> := PolynomialRing(Rationals());
 C := HyperellipticCurve(R![85140,-319781,84841,306026,-903429,-185679,-8148],R![1,1,0,1]);
 cond := Conductor(C);
 // {* IsSquare(ChangeRing(EulerFactor(C,p),GF(3))) : p in PrimesUpTo(10000) | cond mod p ne 0 and p ne 3 *};
 L := getcharpols(C);
 {* IsSquare(ChangeRing(x[2],GF(3))) : x in L | cond mod x[1] ne 0 and x[1] ne 3 *};
 
+
+// Need to still ensure that Tamagawa numbers of F are coprime to 3.
+// The Tamagawa number of F'=28900.a.57800.1 at 2 is 3.
+R.<x> = PolynomialRing(QQ)
+C = HyperellipticCurve(R([85140,-319781,84841,306026,-903429,-185679,-8148]),R([1,1,0,1]))
+
+// In general, the roles of F and F' can be swapped, as long as we ensure that Fisher's conditions hold for F.
