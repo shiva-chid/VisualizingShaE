@@ -37,7 +37,7 @@ for C in g2c:
   elltorsCrk = len([int(ord) for ord in torsC[1:-1].split(",") if len(ord) > 0 and int(ord) % ell == 0])
   n = rkC + elltorsCrk
 #  if n > 0:
-  if n > 0 and elltorsCrk == 0:
+  if n > 0 and elltorsCrk == 0: #TODO Change n to psi-version of weak Mordell-Weil rank. don't set elltorsCrk to 0 necessarily.
     candidate_C.append(C['eqn'])
     candidate_C_cond.append(C['cond'])
     candidate_C_ellrk.append(n)
