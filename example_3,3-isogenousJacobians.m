@@ -44,7 +44,9 @@ L := getcharpols(C);
 
 // Need to still ensure that Tamagawa numbers of F are coprime to 3.
 // The Tamagawa number of F'=28900.a.57800.1 at 2 is 3.
-R.<x> = PolynomialRing(QQ)
-C = HyperellipticCurve(R([85140,-319781,84841,306026,-903429,-185679,-8148]),R([1,1,0,1]))
+Attach("Tamagawa/Tamagawa_pkg2.m");
+[<p,TamagawaNumber(RegularModel(C,p))> : p in PrimeFactors(cond)];
+// [ <2, 3>, <5, 1>, <17, 1> ]
+// Sadly the Tamagawa number at 2 is not coprime to 3.
 
 // In general, the roles of F and F' can be swapped, as long as we ensure that Fisher's conditions hold for F.

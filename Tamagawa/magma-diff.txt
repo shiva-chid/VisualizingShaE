@@ -1,0 +1,144 @@
+These are the two files of the regular models package that I adjusted to take other field extensions. The changes to main.m reflect some changes made to fix a bug present in magma-2.25-1.
+
+
+diff magma-2.25-1/package/Geometry/Crv/RegModel/main.m
+1643c1643
+<     eqnC := PolC! ( LCM([Denominator(x) : x in Coefficients(DefiningEquations(C)[1])]) * DefiningEquations(C)[1] );
+---
+>     eqnC := PolC! DefiningEquations(C)[1];
+1696c1696
+<       error if Evaluate(LCM([Denominator(x) : x in Coefficients(Equation(C))])*Equation(C), pt) eq 0, 
+---
+>       error if Evaluate(Equation(C), pt) eq 0, 
+1698c1698
+<       error if R!Evaluate(LCM([Denominator(x) : x in Coefficients(Equation(C))])*Equation(C), pt) in P,
+---
+>       error if R!Evaluate(Equation(C), pt) in P,
+
+
+
+diff magma-2.25-1/package/Geometry/Crv/RegModel/regularity.m
+48,68d47
+< 
+< function pointlift(c, res) // tries to lift in smallest number field possible
+<   ord := Degree(MinimalPolynomial(c));
+<   if (ord eq 1) or (ord eq Degree(Parent(c))) then // in this case the current lifting should be alright
+<     return c@@res;
+<   end if;
+<   K := NumberField(Domain(res));
+<   L, iota := Explode([x : x in Subfields(K) | Degree(x[1]) eq ord][1]); // find smallest number field in which c could be lifted
+<   OL := MaximalOrder(L);
+<   P := ideal < OL | #PrimeField(Parent(c)) >;
+<   F, resL := ResidueClassField(P); // redefine restriction map on new number field
+<   
+<   for b in Roots(MinimalPolynomial(c), F) do
+<     blift := b[1]@@resL; // try all roots of minimal polynomial to see which one is the right one
+<     if res(iota(blift)) eq c then
+<       return Domain(res)!iota(blift);
+<     end if;
+<   end for;
+<   
+<   assert(false); // if none found, assertion error
+< end function;
+72,73c51
+<   if ISA(Type(O), RngOrd) then return pointlift(c, res);
+<   elif ISA(Type(O), RngUPol) then return O!c; 
+---
+>   if ISA(Type(O), RngUPol) then return O!c; 
+110,126c88,106
+< function FindInertExtension(K, d, P : special := false, tries := Infinity())
+<   if (d eq 1) then
+<     return K, P, PrimeFactors(Discriminant(K));
+<   elif IsPrimePower(d) then
+<     p := PrimeFactors(d)[1];
+<     if not(Degree(K) eq 1) then
+<       if not(PrimeFactors(Degree(K)) eq [p]) then
+<         if Valuation(Degree(K), p) eq 0 then
+<           L1 := Rationals();
+<         else
+<           L1 := Subfields(K, p^Valuation(Degree(K), p))[1][1];
+<         end if;          
+<         L2 := Subfields(K, Degree(K) div p^Valuation(Degree(K), p))[1][1];
+<         M1, PM, ramification := FindInertExtension(L1, d, ideal< Integers(L1) | Generators(P) > : special := true, tries := tries);
+<         M := CompositeFields(M1, L2)[1];
+<         M := OptimizedRepresentation(M : Ramification := ramification);
+<         return M, ideal < Integers(M) | Generators(PM) >, ramification;
+---
+> function global_extension(K, pol, P, res : special:=false, tries:=Infinity())
+>   gensP := generators(P);
+>   Pol := PolynomialRing(K);
+>   polO := polylift(pol, Pol, res);
+>   // try random perturbations of polO
+>   t := 0;
+>   while t lt tries do
+>     if IsIrreducible(polO) then
+>       t +:= 1;
+>       KK := ext< K | polO >;
+>       if not special then
+>         return KK;
+>       else
+>         KK := OptimizedRepresentation(AbsoluteField(KK));
+>         OKK := Integers(KK);
+>         if Order([KK.1]) eq OKK then
+>           assert IsPrime(ideal<OKK|gensP>);
+>           return KK;
+>         end if;
+129,181c109,111
+<     L, PL, ramification := FindInertExtension(K, d div p, P : special := special, tries := tries);
+<     l, res := ResidueClassField(PL);
+<     m := ext<l | p>;
+<     polk := DefiningPolynomial(m, l);
+<     Pol := PolynomialRing(L);
+<     polO := polylift(polk, Pol, res);
+<     gensP := Generators(PL);
+<     //print "Making list...";
+<     bestDisc := Infinity();
+<     for j in [1..100000] do
+<       //print "j =", j;
+<       newpolO := polO + &+[Random({Pol|0,1,-1})*(Random(l)@@res)*Random(gensP) * Pol.1^i : i in [0..Degree(polk)-1]];
+<       newDisc := Integers() ! Abs(Norm(Discriminant(newpolO)));
+<       if newDisc le bestDisc then
+<         bestDisc := newDisc;
+<         polO := newpolO;
+<       end if;
+<     end for;
+<     //polOprimefactors := [Factorisation(Integers()!Norm(Discriminant(f)) : TrialDivisionLimit := 100000) : f in polOlist];
+<     //print [Max([i[1] : i in fact]) : fact in polOprimefactors];
+<     //m, ind := Min([Max([i[1] : i in fact]) : fact in polOprimefactors]);
+<     //print bestDisc;
+<     t := 0;
+< 
+< 
+<     while t le tries do
+<       if IsIrreducible(polO) then
+<         //print "Found", polO, Norm(Discriminant(ext<L | polO>));
+<         newramification := [fact[1] : fact in Factorisation(Norm(Discriminant(ext<L | polO>)) : Proof := false, ECMLimit := 200)];
+<         //print "Found ramification", newramification;
+<         M := OptimizedRepresentation(AbsoluteField(ext<L | polO>) : Ramification := ramification cat newramification);
+<         //print "Found", M;
+<         PM := ideal< Integers(M) | gensP >;
+<         return M, PM, ramification cat newramification;
+<       end if;
+<       polO +:= Random({Pol|1,-1})*Random(gensP) * Pol.1^Random(Degree(polk)-1);
+<     end while;
+<   else  
+<     M := K;
+<     ramification := [];
+<     for f in Factorisation(d : TrialDivisionLimit := 1000000) do
+<       L, PL, newramification := FindInertExtension(K, f[1]^f[2], P : special := special, tries := tries);
+<       ramification := ramification cat newramification;
+<       M := OptimizedRepresentation(CompositeFields(M, L)[1] : Ramification := ramification);
+< 
+<     end for;
+<     return M, 0, ramification;
+<   end if;
+< end function;
+< 
+< function global_extension(K, pol, P, res : special:=false, tries:=Infinity())
+<   //print "Trying to find extension of", K, "in which", pol, "factors"; 
+<   return FindInertExtension(K, Degree(pol), P : special := special, tries := tries); // Use new code to find global extension
+---
+>     polO +:= Random({Pol|1,-1})*Random(gensP) * Pol.1^Random(Degree(pol)-1);
+>   end while;
+>   error "The current implementation can't handle this. Need an unramified base extension of local degree", Degree(pol);
+
