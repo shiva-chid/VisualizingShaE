@@ -11,12 +11,11 @@ lowhtrationals;
 primesthreshold := 10^4;
 primesbound := 10^2;
 
+
 ell := 3; D := 13; E := EllipticCurve([1, 0, 0, -15663, -755809]);
 // ell := 5; D := 5; E := EllipticCurve([1, -1, 0, -332311, -73733731]);
 Dfile := Sprintf("%o.txt", D);
 f := eval Read(Dfile);
- 
-
 
 Es := [E];
 apEs := [AssociativeArray() : i in [1..#Es]];
@@ -26,6 +25,27 @@ for i in [1..#Es] do
         apEs[i][p] := TraceOfFrobenius(E, p);
     end for;
 end for;
+
+filename := Sprintf("ellipticcurvesinfo%o.txt",ell);
+fil := Open(filename, "r");
+s := Gets(fil);
+Es := [];
+apEs := [];
+while not IsEof(s) do
+    s_split := Split(s, ":");
+    ainvs := [StringToInteger(x) : x in Split(s_split[1], "[], ")];
+    cond := StringToInteger(s_split[2]);
+    label := s_split[3];
+    aps := [StringToInteger(x) : x in Split(s_split[4], "[], ")];
+    apsdict := AssociativeArray();
+    for i->p in PrimesUpTo(primesbound) do
+        apsdict[p] := aps[i];
+    end for;
+    Append(~Es, EllipticCurve(ainvs));
+    Append(~apEs,apsdict);
+    s := Gets(fil);
+end while;
+#Es, #apEs;
 
 goodpairs := [**];
 count := 0;
