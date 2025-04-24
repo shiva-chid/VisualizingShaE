@@ -14,7 +14,8 @@ lowhtrationals := [41/4, 1/5, 0, 4, 6, 1/14];
 primesthreshold := 10^4;
 primesbound := 10^2;
 
-ell := 7; E := EllipticCurve([1, 1, 0, -38582789, -87778717747]);
+ell := 7;
+E := EllipticCurve([1, 1, 0, -38582789, -87778717747]);
 
 Es := [E];
 apEs := [AssociativeArray() : i in [1..#Es]];
@@ -57,16 +58,18 @@ function get_goodpairs(apEs,ell)
         catch e;
             continue;
         end try;
+/*
         J := Jacobian(C);
         try
             Jell := BaseExtend(J,GF(ell));
         catch e;
             continue;
         end try;
+*/
         discC := Discriminant(C);
         discCmod := ZZ!(Numerator(discC)*Denominator(discC));
         badprimes := [p : p in PrimesUpTo(primesthreshold) | discCmod mod p eq 0];
-        if &*([1] cat [p^Valuation(discCmod, p) : p in badprimes]) ne discCmod then continue; end if;
+        if &*([1] cat [p^Valuation(discCmod, p) : p in badprimes]) ne Abs(discCmod) then continue; end if;
         indsleft := [1..#apEs];
         for p in PrimesUpTo(primesbound) do
             if discCmod mod p eq 0 then continue; end if;
