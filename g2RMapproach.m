@@ -175,32 +175,36 @@ for x in verygoodpairs do
         end if;
     end for;
     J := Jacobian(C);
-    rkbds := RankBounds(J);
+    rkbdlow, rkbdupp := RankBounds(J);
+    rkbds := [rkbdlow, rkbdupp];
     printf "Rank Bounds for Jac(C): %o\n", rkbds;
     Append(~mwranks, rkbds);
     Append(~verygoodpairs1, <Coefficients(g), rkbds, Es_for_C>);
 end for;
 /*
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 4
+Rank Bounds for Jac(C): [ 4, 4 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 0
+Rank Bounds for Jac(C): [ 0, 2 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 2
+Rank Bounds for Jac(C): [ 2, 2 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 2
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 0
+Rank Bounds for Jac(C): [ 2, 2 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 4
+Rank Bounds for Jac(C): [ 0, 2 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 4
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 2
+Rank Bounds for Jac(C): [ 4, 4 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 2
+Rank Bounds for Jac(C): [ 4, 4 ]
 Verified congruence for primes upto 1000
-Rank Bounds for Jac(C): 0
+Rank Bounds for Jac(C): [ 2, 4 ]
+Verified congruence for primes upto 1000
+Rank Bounds for Jac(C): [ 2, 2 ]
+Verified congruence for primes upto 1000
+Verified congruence for primes upto 1000
+Rank Bounds for Jac(C): [ 0, 2 ]
 */
 
 Attach("Tamagawa/Tamagawa_pkg2.m");
