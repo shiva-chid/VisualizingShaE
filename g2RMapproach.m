@@ -1,3 +1,8 @@
+/*
+   Test comment, update later. Describe what this 
+   script is doing.
+*/
+
 ZZ := Integers();
 P<a,b,c,x> := PolynomialRing(Rationals(),4);
 P1<t> := PolynomialRing(Rationals());
