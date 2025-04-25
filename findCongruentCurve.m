@@ -19,9 +19,6 @@ alpha, beta := RubinSilverbergPolynomials(5, J);
 R<t> := Parent(alpha);
 beta := R!beta;
 
-n := 4;
-F := EllipticCurve([a * Evaluate(alpha, n), b * Evaluate(beta, n)]);
-
 partnerCurves := [];
 for n in [1..100] do
     // Get a nonsingular curve
