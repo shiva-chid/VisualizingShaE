@@ -8,7 +8,7 @@ P<a,b,c,x> := PolynomialRing(Rationals(),4);
 P1<t> := PolynomialRing(Rationals());
 
 htbd := 20;
-lowhtrationals := [0] cat Setseq({a/b : a in [1..htbd], b in [-htbd..htbd] | b ne 0 and GCD(a,b) eq 1});
+lowhtrationals := Setseq({a/b : a in [-htbd..htbd], b in [1..htbd] | GCD(a,b) eq 1});
 lowhtrationals := Sort(lowhtrationals, func<a,b|#Sprint(a) - #Sprint(b)>);
 #lowhtrationals;
 lowhtrationals;
