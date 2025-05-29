@@ -1,0 +1,16 @@
+E := EllipticCurve("571a1");
+P2<x,y,z> := Ambient(E);
+F<A,B> := FunctionField(E);
+R<X,Y,Z> := PolynomialRing(F, 3);
+a := -4;
+b := -60;
+c := -232;
+d := -52;
+e := -3;
+xi := A;
+Q := a*X^2 + b*X*Y + c*Y^2 + d*Y*Z + e*Z^2 + xi*(Y^2 - X*Z);
+V := QuadraticSpace(Q);
+M := QuadraticFormMatrix(V);
+C := CliffordAlgebra(M);
+Cplus, emb := EvenSubalgebra(C);
+ans, QA, isoCPlusToQA := IsQuaternionAlgebra(Cplus);
