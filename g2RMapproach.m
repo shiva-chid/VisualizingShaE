@@ -7,7 +7,7 @@ ZZ := Integers();
 P<a,b,c,x> := PolynomialRing(Rationals(),4);
 P1<t> := PolynomialRing(Rationals());
 
-htbd := 20;
+htbd := 10;
 lowhtrationals := Setseq({a/b : a in [-htbd..htbd], b in [1..htbd] | GCD(a,b) eq 1});
 lowhtrationals := Sort(lowhtrationals, func<a,b|#Sprint(a) - #Sprint(b)>);
 #lowhtrationals;
@@ -15,11 +15,10 @@ lowhtrationals;
 
 primesthreshold := 10^4;
 primesbound := 10^2;
+lowhtrationalsBound := 25000;
 
 
-// ell := 3; D := 13; E := EllipticCurve([1, 0, 0, -15663, -755809]);
-ell := 5; D := 5; E := EllipticCurve([1, -1, 0, -332311, -73733731]);
-Es := [E];
+ell := 5; D := 5;
 
 filename := Sprintf("ellipticcurvesinfo%o.txt",ell);
 fil := Open(filename, "r");
@@ -58,6 +57,7 @@ f := eval Read(Dfile);
 goodpairs := [**];
 count := 0;
 for aa, bb, cc in lowhtrationals do
+    if count gt lowhtrationalsBound then break; end if;
     count +:= 1;
     if count mod 1000 eq 0 then print count; end if;
     g := Evaluate(f, [aa,bb,cc,t]);
@@ -164,6 +164,8 @@ function verify_congruence(E,C,ell : primesbound := 1000);
 end function;
 
 SetClassGroupBounds("GRH");
+
+// verygoodpairs := verygoodpairs[1..10];
 
 verygoodpairs1 := [**];
 mwranks := [**];
