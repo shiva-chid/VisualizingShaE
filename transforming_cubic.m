@@ -1,13 +1,13 @@
 /*
-For a suppressed cubic f, the Mobius transformation M outputted by KummerElementAndTransformation
-seems to have some sort of pattern:
+For a suppressed cubic f = x^3 + a1 x + a0, the Mobius transformation M outputted by
+KummerElementAndTransformation seems to have some sort of pattern:
 [1 alpha/3]
-[alpha 1/n]
-where n is an integer, and alpha is some element in K=Q(zeta_3,sqrt(D)) where D is Disc(f).
-We find n and alpha below. Turns out n is in Q, and alpha is in Q(sqrt(-3D))
+[alpha -1/a1]
+where alpha is some element in K=Q(zeta_3,sqrt(D)) where D is Disc(f).
+We verify this and find alpha below. Turns out alpha is in Q(sqrt(-3D))
 */
 
-// Finding n
+// Verifying (2,2)^th entry
 // m := 3;
 m := 2;
 F<[a]> := FunctionField(Rationals(),m);
@@ -20,7 +20,7 @@ I := ideal<P|[Coefficient(g,i) : i in [1,2]]>;
 time GBI := GroebnerBasis(I);
 [[Degree(x,P.i) : i in [1,2]] : x in GBI];
 Factorisation(GBI[#GBI]);
-// There is a linear factor: So n is -a1
+// There is a linear factor: So (2,2)^th entry is -1/a1
 
 // Finding alpha
 // m := 3;
@@ -71,7 +71,7 @@ for count := 1 to 30 do
         a0 := Coefficient(f,0);
         a1 := Coefficient(f,1);
         if a1 ne 0 then
-            assert M[2,2] eq -1/a1; // n is -a1
+            assert M[2,2] eq -1/a1; // (2,2)^th entry is -1/a1
             minpolalpha := MinimalPolynomial(M[2,1]);
             assert Coefficients(minpolalpha) eq [-3/a1,-9*a0/a1^2,1]; // alpha is a root of this quadratic polynomial
         end if;
