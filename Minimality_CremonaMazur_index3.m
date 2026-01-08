@@ -2,36 +2,44 @@ intrinsic CMcurveForIndex3Torsor(L : SeqEnum) -> Crv
 {given the coefficients of a smooth plane cubic C (an index 3 torsor of an elliptic curve) 
 returns a Cremona-Mazur curve over an at most biquadratic extension whose Jacobian visualizes C}
     F := Universe(L);
+    F := FieldOfFractions(F);
     P1<t> := PolynomialRing(F);
     PP2 := ProjectiveSpace(F,2);
     P<x,y,z> := CoordinateRing(PP2);
     mons := [x^3,y^3,z^3,x^2*y,x^2*z,y^2*x,y^2*z,z^2*x,z^2*y,x*y*z];
     f := &+[L[i]*mons[i] : i in [1..#mons]];
 
-    cubicpol := Evaluate(f,[1,0,t]);
-    a, M, g := KummerElementAndTransformation(cubicpol);
-    K := BaseRing(M);
-    PK<x,y,z> := PolynomialRing(K,3);
-    P1<T> := PolynomialRing(K);
-    newz := M[1,1]*z+M[1,2]*x;
-    newx := M[2,1]*z+M[2,2]*x;
-    fnew := Evaluate(f,[newx,y,newz]);
-    temp := MonomialCoefficient(fnew,z^3);
-    fnew := -fnew/temp;
-    assert MonomialCoefficient(fnew,x^3) eq a;
-
-    fnew := Evaluate(fnew,x,x-MonomialCoefficient(fnew,x^2*y)/(3*MonomialCoefficient(fnew,x^3))*y);
-//    print MonomialCoefficient(fnew,x^2*y);
-    fnew := Evaluate(fnew,z,z-MonomialCoefficient(fnew,z^2*y)/(3*MonomialCoefficient(fnew,z^3))*y);
-//    print MonomialCoefficient(fnew,x^2*y), MonomialCoefficient(fnew,z^2*y);
-    a := MonomialCoefficient(fnew,x^3);
-    b := MonomialCoefficient(fnew,y^3);
-    m := MonomialCoefficient(fnew,x*y*z);
     nonappearingmons := [x^2*y,x^2*z,z^2*x,z^2*y];
-    othercoeffs := [MonomialCoefficient(fnew,mon) : mon in nonappearingmons];
-//    print othercoeffs;
-    assert Set(othercoeffs) eq {0};
-    assert MonomialCoefficient(fnew,z^3) eq -1;
+    othercoeffs := [MonomialCoefficient(f,mon) : mon in nonappearingmons];
+    if Set(othercoeffs) eq {0} then
+        temp := MonomialCoefficient(f,z^3);
+        fnew := -f/temp;
+    else
+        cubicpol := Evaluate(f,[1,0,t]);
+        a, M, g := KummerElementAndTransformation(cubicpol);
+        K := BaseRing(M);
+        PK<x,y,z> := PolynomialRing(K,3);
+        P1<T> := PolynomialRing(K);
+        newz := M[1,1]*z+M[1,2]*x;
+        newx := M[2,1]*z+M[2,2]*x;
+        fnew := Evaluate(f,[newx,y,newz]);
+        temp := MonomialCoefficient(fnew,z^3);
+        fnew := -fnew/temp;
+        assert MonomialCoefficient(fnew,x^3) eq a;
+
+        fnew := Evaluate(fnew,x,x-MonomialCoefficient(fnew,x^2*y)/(3*MonomialCoefficient(fnew,x^3))*y);
+    //    print MonomialCoefficient(fnew,x^2*y);
+        fnew := Evaluate(fnew,z,z-MonomialCoefficient(fnew,z^2*y)/(3*MonomialCoefficient(fnew,z^3))*y);
+    //    print MonomialCoefficient(fnew,x^2*y), MonomialCoefficient(fnew,z^2*y);
+        a := MonomialCoefficient(fnew,x^3);
+        b := MonomialCoefficient(fnew,y^3);
+        m := MonomialCoefficient(fnew,x*y*z);
+        nonappearingmons := [x^2*y,x^2*z,z^2*x,z^2*y];
+        othercoeffs := [MonomialCoefficient(fnew,mon) : mon in nonappearingmons];
+    //    print othercoeffs;
+        assert Set(othercoeffs) eq {0};
+        assert MonomialCoefficient(fnew,z^3) eq -1;
+    end if;
 
     C := GenusOneModel(fnew);
 /*
