@@ -14,6 +14,9 @@
 
 */
 
+// Timeout in seconds for PrimeWitnessFromCoefficients. Set to 0 for no timeout.
+PRIME_WITNESS_COMPUTATION_S := 2;
+
 RealInputFileName := "data/sha_order3_processed/" cat InputFileName;
 OutputFileName := "data/sha_order3_processed_witnessed/" cat "witnessed." cat InputFileName;
 
@@ -45,11 +48,21 @@ function MagmaListFromProcessedLine(MyLine)
     return L;
 end function;
 
-for MyLine in LinesOfInputFile do
+for i -> MyLine in LinesOfInputFile do
     L := MagmaListFromProcessedLine(MyLine);
+    printf "Processing line %o: %o\n", i, L;
     try
+        if PRIME_WITNESS_COMPUTATION_S gt 0 then
+            SetAlarm(PRIME_WITNESS_COMPUTATION_S);
+        end if;
         p := PrimeWitnessFromCoefficients(L);
+        if PRIME_WITNESS_COMPUTATION_S gt 0 then
+            SetAlarm(0);  // Clear the alarm
+        end if;
     catch e
+        if PRIME_WITNESS_COMPUTATION_S gt 0 then
+            SetAlarm(0);  // Clear the alarm
+        end if;
         printf "FAILURE for input %o: %o\n", L, e;
         p := 0;
     end try;
