@@ -17,6 +17,9 @@
 // Timeout in seconds for PrimeWitnessFromCoefficients. Set to 0 for no timeout.
 PRIME_WITNESS_COMPUTATION_S := 2;
 
+// Don't quit on errors (including alarm timeouts)
+SetQuitOnError(false);
+
 RealInputFileName := "data/sha_order3_processed/" cat InputFileName;
 OutputFileName := "data/sha_order3_processed_witnessed/" cat "witnessed." cat InputFileName;
 
