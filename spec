@@ -1,4 +1,5 @@
 {
     FractionalLinearTransformation.m
     KummerElementAndTransformation.m
+    Minimality_CremonaMazur_index3.m
 }
