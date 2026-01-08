@@ -53,15 +53,15 @@ for i -> MyLine in LinesOfInputFile do
     printf "Processing line %o: %o\n", i, L;
     try
         if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            SetAlarm(PRIME_WITNESS_COMPUTATION_S);
+            Alarm(PRIME_WITNESS_COMPUTATION_S);
         end if;
         p := PrimeWitnessFromCoefficients(L);
         if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            SetAlarm(0);  // Clear the alarm
+            Alarm(0);  // Clear the alarm
         end if;
     catch e
         if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            SetAlarm(0);  // Clear the alarm
+            Alarm(0);  // Clear the alarm
         end if;
         printf "FAILURE for input %o: %o\n", L, e;
         p := 0;
