@@ -27,9 +27,13 @@ OUTPUT_DIR = os.path.join(SCRIPT_DIR, "data", "sha_order3_processed_witnessed")
 MAGMA_SINGLE_CASE = '''
 AttachSpec("spec");
 L := {coeffs};
-C := CMcurveForIndex3Torsor(L);
-p := PrimeWitnessForMinimality(C);
-print p;
+try
+    C := CMcurveForIndex3Torsor(L);
+    p := PrimeWitnessForMinimality(C);
+    print p;
+catch e
+    print 0;
+end try;
 quit;
 '''
 
@@ -37,7 +41,7 @@ quit;
 def compute_prime_witness(coeffs_str):
     """
     Run Magma to compute prime witness for a single case.
-    Returns the prime as int, or 0 on failure/timeout.
+    Returns (prime, timed_out) where prime is int (0 on failure) and timed_out is bool.
     """
     magma_code = MAGMA_SINGLE_CASE.format(coeffs=coeffs_str)
 
@@ -55,14 +59,14 @@ def compute_prime_witness(coeffs_str):
         # Get last non-empty line (in case there's other output)
         lines = [l.strip() for l in output.split('\n') if l.strip()]
         if lines:
-            return int(lines[-1])
-        return 0
+            return int(lines[-1]), False
+        return 0, False
     except subprocess.TimeoutExpired:
         print(f"TIMEOUT for input {coeffs_str}", file=sys.stderr)
-        return 0
+        return 0, True
     except Exception as e:
         print(f"FAILURE for input {coeffs_str}: {e}", file=sys.stderr)
-        return 0
+        return 0, False
 
 
 def process_file(input_filename):
@@ -83,9 +87,12 @@ def process_file(input_filename):
             coeffs_str = "[" + ", ".join(parts) + "]"
 
             print(f"Processing line {i}: {coeffs_str}")
-            p = compute_prime_witness(coeffs_str)
+            p, timed_out = compute_prime_witness(coeffs_str)
 
-            out.write(f"{line} PrimeWitness: {p}\n")
+            if timed_out:
+                out.write(f"{line} PrimeWitness: {p} (timeout)\n")
+            else:
+                out.write(f"{line} PrimeWitness: {p}\n")
             out.flush()  # Flush after each line so progress is visible
 
     print(f"Done processing {input_filename}")
