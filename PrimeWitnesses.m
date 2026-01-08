@@ -47,7 +47,12 @@ end function;
 
 for MyLine in LinesOfInputFile do
     L := MagmaListFromProcessedLine(MyLine);
-    p := PrimeWitnessFromCoefficients(L);
+    try
+        p := PrimeWitnessFromCoefficients(L);
+    catch e
+        printf "FAILURE for input %o: %o\n", L, e;
+        p := 0;
+    end try;
     to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
     fprintf OutputFileName, to_print;
 end for;
