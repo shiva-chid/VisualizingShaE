@@ -15,7 +15,7 @@ print p;
 // Example 2: Diagonal torsor
 L := [1, 2, 91, 0, 0, 0, 0, 0, 0, -17]; // A torsor for 182.d1, which is 3-isogenous to 182.d2
 C := CMcurveForIndex3Torsor(L);
-assert GenusC() eq 1;
+assert Genus(C) eq 1;
 PP2<x,y,z> := AmbientSpace(C);
 K<w> := BaseRing(PP2);
 singptsC := SingularPoints(C); #singptsC;

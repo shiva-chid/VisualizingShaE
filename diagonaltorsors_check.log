@@ -1,0 +1,46 @@
+> AttachSpec("spec");
+> 
+> fil := Open("diagonaltorsors.txt","r");
+> s := Gets(fil);
+> count := 0;
+> while not IsEof(s) do
+while>     count +:= 1; if count mod 100 eq 0 then print count; end \
+if;
+while>     try
+while|try>         C1 := GenusOneModel(3,s);
+while|try>         L1 := Eltseq(C1);
+while|try>     catch e;
+while|try>         print s;
+while|try>         print e;
+while|try>         s := Gets(fil);
+while|try>         continue;
+while|try>     end try;
+while>     C2 := CMcurveForIndex3Torsor(L1);
+while>     assert Genus(C2) eq 1;
+while>     PP2<x,y,z> := AmbientSpace(C2);
+while>     K<w> := BaseRing(PP2);
+while>     KK<ww> := NumberFieldExtra(DefiningPolynomial(K));
+while>     phi := hom<K->KK|ww>;
+while>     C2 := BaseChange(C2,phi);
+while>     singptsC2 := SingularPoints(C2);
+while>     JacC2 := EllipticCurve(C2,singptsC2[1]);
+while>     tau2 := PeriodMatrix(HyperellipticCurve(JacC2));
+while> 
+while>     JacC1 := Jacobian(C1);
+while>     tau1 := PeriodMatrix(HyperellipticCurve(JacC1));
+while> 
+while>     boo, M := IsIsogenousPeriodMatrices(tau1,tau2);
+while>     assert boo and Determinant(M) in {3,-3};
+while> 
+while>     jJacC2 := jInvariant(JacC2);
+while>     assert jJacC2 in Rationals();
+while>     E2j := EllipticCurveFromjInvariant(jJacC2);
+while>     boo, twist_fac := IsQuadraticTwist(JacC2,E2j);
+while>     assert boo and twist_fac in Rationals();
+while> 
+while>     s := Gets(fil);
+while> end while;
+100
+200
+
+Total time: 28.229 seconds, Total memory usage: 220.94MB
