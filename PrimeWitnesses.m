@@ -24,18 +24,6 @@ AttachSpec("spec");
 
 LinesOfInputFile := Split(Read(RealInputFileName), "\n");
 
-// Global variable to track timeout status
-TIMED_OUT := false;
-
-// Alarm handler - sets flag and continues execution
-procedure AlarmHandler(sig)
-    TIMED_OUT := true;
-end procedure;
-
-if PRIME_WITNESS_COMPUTATION_S gt 0 then
-    SetInterruptHandler("SIGALRM", AlarmHandler);
-end if;
-
 function PrimeWitnessFromCoefficients(L)
     // Given a list L of 10 integers (ternary cubic coefficients),
     // compute the CM curve and return the prime witness for minimality.
@@ -62,7 +50,8 @@ end function;
 for i -> MyLine in LinesOfInputFile do
     L := MagmaListFromProcessedLine(MyLine);
     printf "Processing line %o: %o\n", i, L;
-    TIMED_OUT := false;
+    timed_out := false;
+    p := 0;
     try
         if PRIME_WITNESS_COMPUTATION_S gt 0 then
             Alarm(PRIME_WITNESS_COMPUTATION_S);
@@ -75,14 +64,20 @@ for i -> MyLine in LinesOfInputFile do
         if PRIME_WITNESS_COMPUTATION_S gt 0 then
             Alarm(0);  // Clear the alarm
         end if;
-        printf "FAILURE for input %o: %o\n", L, e;
+        // Check if it was a timeout (alarm signal)
+        if "Alarm" in Sprint(e) then
+            printf "TIMEOUT for input %o\n", L;
+            timed_out := true;
+        else
+            printf "FAILURE for input %o: %o\n", L, e;
+        end if;
         p := 0;
     end try;
-    if TIMED_OUT then
-        printf "TIMEOUT for input %o\n", L;
-        p := 0;
+    if timed_out then
+        to_print := MyLine cat " PrimeWitness: 0 (timeout)\n";
+    else
+        to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
     end if;
-    to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
     fprintf OutputFileName, to_print;
 end for;
 
