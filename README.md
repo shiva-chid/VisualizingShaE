@@ -1,3 +1,2 @@
-# VisualizingShaE
+# On the visibility category of the Shafarevich-Tate group
 
-Testing I can commit. And again.
