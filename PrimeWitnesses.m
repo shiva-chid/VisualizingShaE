@@ -15,10 +15,10 @@
 */
 
 // Timeout in seconds for PrimeWitnessFromCoefficients. Set to 0 for no timeout.
-PRIME_WITNESS_COMPUTATION_S := 2;
+PRIME_WITNESS_COMPUTATION_S := 0;
 
 RealInputFileName := "data/sha_order3_processed/" cat InputFileName;
-OutputFileName := "data/sha_order3_processed_witnessed/" cat "witnessed." cat InputFileName;
+OutputFileName := "data/sha_order3_processed_witnessed/" cat "witnessed.notimeout." cat InputFileName;
 
 AttachSpec("spec");
 
@@ -76,7 +76,11 @@ for i -> MyLine in LinesOfInputFile do
     if timed_out then
         to_print := MyLine cat " PrimeWitness: 0 (timeout)\n";
     else
-        to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
+        if p eq false then
+            to_print := MyLine cat " PrimeWitness: -1 (no witness found)\n";
+        else
+            to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
+        end if;
     end if;
     fprintf OutputFileName, to_print;
 end for;
