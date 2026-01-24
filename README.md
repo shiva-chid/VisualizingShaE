@@ -42,6 +42,19 @@ Raymond van Bommel's Magma package for computing Tamagawa numbers of genus 2 cur
 ### `magma_scripts/`
 Standalone Magma examples for gluing constructions and Fisher's algebras.
 
+## Section 3 verification
+
+The main code for Section 3 is `magma/g2RMapproach.m`. When running it, look for the following, indicating success:
+
+=========================================================
+SUCCESS: Tamagawa number computation
+=========================================================
+Curve coefficients: [ 1, 6, 5, 12, 2, 0, 1 ]
+Rank bounds: [ 4, 4 ]
+Congruent elliptic curves (a-invariants):[
+[ 0, -1, 0, -169321, -28379327 ]]
+Tamagawa numbers: [ <2, 9>, <3, 4>, <29, 1> ]
+
 ## Testing
 
 Run the full test suite from the project root:
