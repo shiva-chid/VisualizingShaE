@@ -456,7 +456,14 @@ procedure compute_tamagawa_numbers(verygoodpairs1)
 
         try
             Tamagawa := [<p, TamagawaNumber(RegularModel(C, p))> : p in PrimeFactors(N)];
-            printf "Tamagawa numbers for C:\n%o\n", Tamagawa;
+            print "=========================================================";
+            print "SUCCESS: Tamagawa number computation completed!";
+            print "=========================================================";
+            printf "Curve coefficients: %o\n", x[1];
+            printf "Rank bounds: %o\n", x[2];
+            printf "Congruent elliptic curves (a-invariants): %o\n", x[3];
+            printf "Tamagawa numbers: %o\n", Tamagawa;
+            print "---------------------------------------------------------";
         catch e;
             print e;
         end try;
