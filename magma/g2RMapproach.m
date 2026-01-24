@@ -13,6 +13,11 @@
     5. Further filter by conductor exponent at ell (must be 0 for good reduction)
     6. Verify congruences rigorously and compute Mordell-Weil rank bounds
     7. Compute Tamagawa numbers for the resulting curves
+
+    Run this with:
+        magma -b g2RMapproach.m
+    from the magma/ directory.
+
 */
 
 //=============================================================================
@@ -513,6 +518,10 @@ procedure main()
     // Step 7: Compute Tamagawa numbers
     print "\n--- Computing Tamagawa numbers ---";
     Attach("../Tamagawa/Tamagawa_pkg2.m");
+
+    print "\n--- The Tamagawa package is a bit unstable and may run into
+            RunTime errors. If the numbers are printed, the user needs 
+            to check that they are coprime to what is claimed (probably 5).---";
     compute_tamagawa_numbers(verygoodpairs1);
 
     print "\n=== Computation complete ===";
