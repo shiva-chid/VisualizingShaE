@@ -56,7 +56,7 @@ rationalsuptoht := Sort(rationalsuptoht,func<x,y|Maximum(Abs(Numerator(x)),Abs(D
 
 // m := 3;
 m := 2;
-AttachSpec("spec");
+AttachSpec("magma/spec");
 P<x> := PolynomialRing(Rationals());
 for count := 1 to 30 do
     if m eq 3 then

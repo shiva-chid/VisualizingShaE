@@ -113,7 +113,7 @@ end intrinsic;
 
 Example
 
-AttachSpec("spec");
+AttachSpec("magma/spec");
 F<a> := FunctionField(Rationals());
 P<x> := PolynomialRing(F);
 f1 := (x+2)*(x^2-2)*(x^4-4*x^2+a);

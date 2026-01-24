@@ -19,13 +19,13 @@ import subprocess
 # Timeout in seconds for each case
 TIMEOUT_SECONDS = 5
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_DIR = os.path.join(SCRIPT_DIR, "data", "sha_order3_processed")
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "data", "sha_order3_processed_witnessed")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+INPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_processed")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_processed_witnessed")
 
 # Magma script to compute prime witness for a single case
 MAGMA_SINGLE_CASE = '''
-AttachSpec("spec");
+AttachSpec("magma/spec");
 L := {coeffs};
 try
     C := CMcurveForIndex3Torsor(L);
@@ -52,7 +52,7 @@ def compute_prime_witness(coeffs_str):
             capture_output=True,
             text=True,
             timeout=TIMEOUT_SECONDS,
-            cwd=SCRIPT_DIR
+            cwd=PROJECT_ROOT
         )
         # Parse the output - should be just the prime number
         output = result.stdout.strip()

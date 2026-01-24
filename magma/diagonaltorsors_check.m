@@ -1,7 +1,7 @@
 SetLogFile("diagonaltorsors_check.log");
-AttachSpec("spec");
+AttachSpec("magma/spec");
 
-fil := Open("diagonaltorsors.txt","r");
+fil := Open("../data/diagonaltorsors.txt","r");
 s := Gets(fil);
 count := 0;
 while not IsEof(s) do

@@ -57,7 +57,7 @@ goodE_cond = []
 goodE_rk = []
 '''
 
-fil = open('curvesinfo.txt','a')
+fil = open('../data/curvesinfo.txt','a')
 # foundone = False
 for i in range(19,len(candidate_C)):
   print(i)

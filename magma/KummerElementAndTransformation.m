@@ -57,7 +57,7 @@ end intrinsic;
 /*
 // initial debugging
 
-AttachSpec("spec");
+AttachSpec("magma/spec");
 f := x^3+x+1;
 f := x^3+3*x+1;
 f := x^3-12*x+8;

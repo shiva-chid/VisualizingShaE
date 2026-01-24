@@ -13,7 +13,7 @@ import urllib.request
 import ssl
 
 BASE_URL = "https://www.dpmms.cam.ac.uk/~taf1000/g1data/"
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "data", "sha_order3_input")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha_order3_input")
 
 # Generate the 30 file ranges
 # First file is 00000-09999, then 10000-19999, ..., 290000-299999

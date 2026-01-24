@@ -1,4 +1,4 @@
-AttachSpec("spec");
+AttachSpec("magma/spec");
 
 // The following code produces a Cremona-Mazur cover C ---> E over an at most biquadratic field K
 // such that Jac(C) visualizes the torsor.

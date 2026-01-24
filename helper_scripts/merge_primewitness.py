@@ -12,9 +12,10 @@ import os
 import shutil
 import re
 
-INPUT_DIR = "data/sha_order3_input"
-WITNESSED_DIR = "data/sha_order3_processed_witnessed"
-OUTPUT_DIR = "data/sha_order3_data"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
+INPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_input")
+WITNESSED_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_processed_witnessed")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_data")
 
 
 def is_header_line(line):

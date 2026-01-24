@@ -17,10 +17,10 @@
 // Timeout in seconds for PrimeWitnessFromCoefficients. Set to 0 for no timeout.
 PRIME_WITNESS_COMPUTATION_S := 0;
 
-RealInputFileName := "data/sha_order3_processed/" cat InputFileName;
-OutputFileName := "data/sha_order3_processed_witnessed/" cat "witnessed.notimeout." cat InputFileName;
+RealInputFileName := "../data/sha_order3_processed/" cat InputFileName;
+OutputFileName := "../data/sha_order3_processed_witnessed/" cat "witnessed.notimeout." cat InputFileName;
 
-AttachSpec("spec");
+AttachSpec("magma/spec");
 
 LinesOfInputFile := Split(Read(RealInputFileName), "\n");
 

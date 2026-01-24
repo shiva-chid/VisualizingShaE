@@ -9,8 +9,8 @@ where PrimeWitness computation timed out, outputting them into a single file.
 import os
 import glob
 
-INPUT_DIR = os.path.join(os.path.dirname(__file__), "data", "sha_order3_data")
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "data", "sha3_timeouts.processed.txt")
+INPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha_order3_data")
+OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha3_timeouts.processed.txt")
 
 
 def extract_timeouts(input_path):

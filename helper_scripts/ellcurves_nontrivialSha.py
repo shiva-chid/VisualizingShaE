@@ -3,7 +3,7 @@ from lmfdb import db
 R.<x> = PolynomialRing(QQ)
 
 ell = 5
-fil = open('ellipticcurvesinfo5.txt','a')
+fil = open('../data/ellipticcurvesinfo5.txt','a')
 
 query = {
     'sha_primes': { '$contains': [ell] },

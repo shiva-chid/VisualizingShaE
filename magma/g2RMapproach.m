@@ -27,7 +27,7 @@ P1<t> := PolynomialRing(Rationals());
 // We need Raymond van Bommel's Tamagawa package for Tamagawa numbers
 //=============================================================================
 
-Attach("Tamagawa/Tamagawa_pkg2.m");
+Attach("../Tamagawa/Tamagawa_pkg2.m");
 
 //=============================================================================
 // CONFIGURATION PARAMETERS
@@ -114,7 +114,7 @@ end function;
     The file should contain a polynomial in variables a,b,c,t.
 */
 function load_curve_family(D)
-    Dfile := Sprintf("%o.txt", D);
+    Dfile := Sprintf("../data/%o.txt", D);
     f := eval Read(Dfile);
     return f;
 end function;
@@ -484,7 +484,7 @@ procedure main()
 
     // Step 2: Load elliptic curves
     print "\n--- Loading elliptic curves ---";
-    filename := Sprintf("ellipticcurvesinfo%o.txt", ELL);
+    filename := Sprintf("../data/ellipticcurvesinfo%o.txt", ELL);
     Es, apEs := load_elliptic_curves(filename, PRIMES_BOUND);
     printf "Loaded %o elliptic curves with Frobenius data\n", #Es;
 
@@ -512,7 +512,7 @@ procedure main()
 
     // Step 7: Compute Tamagawa numbers
     print "\n--- Computing Tamagawa numbers ---";
-    Attach("Tamagawa/Tamagawa_pkg2.m");
+    Attach("../Tamagawa/Tamagawa_pkg2.m");
     compute_tamagawa_numbers(verygoodpairs1);
 
     print "\n=== Computation complete ===";

@@ -15,7 +15,7 @@ delete(C);
 // This is F in Fisher's notation.
 isogclasslbl := "28900.a";
 cond := 28900;
-fil := Open("big_g2database_isogcomplete.txt","r"); // Remember that this database only has typical curves, i.e., End = Z.
+fil := Open("../data/big_g2database_isogcomplete.txt","r"); // Remember that this database only has typical curves, i.e., End = Z.
 s := Gets(fil);
 print s;
 all_data := [];
@@ -44,7 +44,7 @@ L := getcharpols(C);
 
 // Need to still ensure that Tamagawa numbers of F are coprime to 3.
 // The Tamagawa number of F'=28900.a.57800.1 at 2 is 3.
-Attach("Tamagawa/Tamagawa_pkg2.m");
+Attach("../Tamagawa/Tamagawa_pkg2.m");
 [<p,TamagawaNumber(RegularModel(C,p))> : p in PrimeFactors(cond)];
 // [ <2, 3>, <5, 1>, <17, 1> ]
 // Sadly the Tamagawa number at 2 is not coprime to 3.
