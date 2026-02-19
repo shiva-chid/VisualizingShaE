@@ -39,7 +39,7 @@ the order-2 element of H^1(Q,E1) corresponding to the given genus one model.}
         r := (8*a^2*d - 4*a*b*c + b^3)^4;
         try
             E2 := EllipticCurve([0,p,0,q,r]);
-//            E2 := QuadraticTwist(E2,-a);
+            E2 := QuadraticTwist(E2,-a);
         catch e;
             printf "Singular explaining elliptic curve\n";
 //            return false, false;
