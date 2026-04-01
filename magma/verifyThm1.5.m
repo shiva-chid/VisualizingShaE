@@ -1,11 +1,11 @@
 /*
-    check_curve.m
+    verifyThm1.5.m
 
-    Checks properties of the genus 2 curve
+    Verifies Theorem 1.5 for the genus 2 curve
         -2y^2 = x^6 + 2x^4 + 12x^3 + 5x^2 + 6x + 1
 
     Run with:
-        magma -b check_curve.m
+        magma -b verifyThm1.5.m
 */
 
 ZZ := Integers();
@@ -64,7 +64,9 @@ end if;
 //=============================================================================
 print "\n=== 3. Torsion subgroup of Jac(C) ===";
 
-T, phi := TorsionSubgroup(J);
+C_intmodel := IntegralModel(C);
+J_intmodel := Jacobian(C_intmodel);
+T, phi := TorsionSubgroup(J_intmodel);
 printf "Torsion subgroup: %o\n", T;
 printf "Torsion order: %o\n", #T;
 printf "Invariants: %o\n", Invariants(T);
@@ -81,7 +83,7 @@ printf "Bad primes (from discriminant): %o\n", badprimes;
 
 for p in badprimes do
     try
-        R := RegularModel(C, p);
+        R := RegularModel(C_intmodel, p);
         tam := TamagawaNumber(R);
         printf "  Tamagawa number at %o: %o\n", p, tam;
     catch e;
