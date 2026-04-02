@@ -128,6 +128,23 @@ Factorisation(eqntosolve);
 
 //////////////////////////////////////
 
+// Verify the identity g(x) = ((x-5)i + (x-9)j + 4k)^2
+// in the paper's quaternion algebra (-1, x-7).
+// Code's QA has j^2 = 4(x-7), so j_paper = j_code/2, k_paper = k_code/2.
+
+QA := allQAs[1];
+FF1 := BaseRing(QA);
+ii := QA.1;
+jj := QA.2;
+kk := QA.3;
+t := (FF1!(jj^2) + 28)/4;
+
+elt := (t-5)*ii + (t-9)/2*jj + 2*kk;
+gx := t^3 - 26*t^2 + 233*t - 704;
+assert elt^2 eq FF1!gx;
+
+//////////////////////////////////////
+
 // Eg. A simple example of a Clifford algebra
 // whose even subalgebra is the Hamiltonian algebra.
 
