@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
-Merge PrimeWitness data from processed files back into the original input files.
+Merge PrimeWitness data from witnessed files back into the filtered input files.
 
 This script:
-1. Copies sha_order3_input to sha_order3_data
-2. For each file, reads the corresponding witnessed file to get PrimeWitness values
-3. Appends PrimeWitness values to each data row in the copied file
+1. For each file in sha_order3_no3_iso, reads the corresponding witnessed file
+   to get PrimeWitness values
+2. Appends PrimeWitness values to each torsor data row
+3. Writes the result to sha_order3_no3_iso_witnessed
 """
 
 import os
-import shutil
 import re
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
-INPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_input")
+INPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_no3_iso")
 WITNESSED_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_processed_witnessed")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_data")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_no3_iso_witnessed")
 
 
 def is_header_line(line):
@@ -31,7 +31,7 @@ def is_data_row(line):
 
 def extract_primewitness(line):
     """Extract the PrimeWitness portion from a witnessed line."""
-    match = re.search(r'(PrimeWitness: \S+(?:\s+\(timeout\))?)', line)
+    match = re.search(r'(PrimeWitness: \S+(?:\s+\(no witness found\))?)', line)
     if match:
         return match.group(1)
     return None
@@ -39,9 +39,9 @@ def extract_primewitness(line):
 
 def get_witnessed_filename(input_filename):
     """Convert input filename to witnessed filename."""
-    # sha3eqns.00000-09999.txt -> witnessed.sha3eqns.00000-09999.processed.txt
+    # sha3eqns.00000-09999.txt -> witnessed.notimeout.sha3eqns.00000-09999.processed.txt
     base = input_filename.replace('.txt', '')
-    return f"witnessed.{base}.processed.txt"
+    return f"witnessed.notimeout.{base}.processed.txt"
 
 
 def process_file(input_path, witnessed_path, output_path):
@@ -64,7 +64,6 @@ def process_file(input_path, witnessed_path, output_path):
             if is_data_row(line):
                 # This is a data row - append PrimeWitness
                 if pw_index < len(primewitness_values):
-                    # Remove trailing whitespace/newline, add PrimeWitness, add newline
                     output_lines.append(f"{line.rstrip()} {primewitness_values[pw_index]}\n")
                     pw_index += 1
                 else:
@@ -74,11 +73,9 @@ def process_file(input_path, witnessed_path, output_path):
                 # Header or empty line - keep as is
                 output_lines.append(line)
 
-    # Check if we used all PrimeWitness values
     if pw_index != len(primewitness_values):
         print(f"Warning: Used {pw_index} of {len(primewitness_values)} PrimeWitness values")
 
-    # Write output file
     with open(output_path, 'w') as f:
         f.writelines(output_lines)
 
@@ -86,12 +83,8 @@ def process_file(input_path, witnessed_path, output_path):
 
 
 def main():
-    # Create output directory (fresh copy)
-    if os.path.exists(OUTPUT_DIR):
-        shutil.rmtree(OUTPUT_DIR)
-    os.makedirs(OUTPUT_DIR)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # Get list of input files
     input_files = sorted([f for f in os.listdir(INPUT_DIR) if f.endswith('.txt')])
 
     total_rows = 0
@@ -103,7 +96,6 @@ def main():
 
         if not os.path.exists(witnessed_path):
             print(f"Warning: No witnessed file for {input_filename}")
-            shutil.copy(input_path, output_path)
             continue
 
         rows = process_file(input_path, witnessed_path, output_path)

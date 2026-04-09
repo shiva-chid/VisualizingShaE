@@ -22,7 +22,12 @@ python3 helper_scripts/process_sha3eqns_files.py
 
 echo ""
 echo "=== Step 4: Compute prime witnesses (requires Magma) ==="
+mkdir -p data/sha_order3_processed_witnessed
 echo "Running PrimeWitness on all processed files in parallel..."
 cd magma
 ls ../data/sha_order3_processed | parallel -j30 "magma -b InputFileName:={} PrimeWitnesses.m"
 cd "$SCRIPT_DIR"
+
+echo ""
+echo "=== Step 5: Merge PrimeWitness data back into filtered input files ==="
+python3 helper_scripts/merge_primewitness.py
