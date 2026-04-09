@@ -70,7 +70,7 @@ for i -> MyLine in LinesOfInputFile do
     if timed_out then
         to_print := MyLine cat " PrimeWitness: 0 (timeout)\n";
     else
-        if p eq false then
+        if Type(p) eq BoolElt then
             to_print := MyLine cat " PrimeWitness: -1 (no witness found)\n";
         else
             to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
