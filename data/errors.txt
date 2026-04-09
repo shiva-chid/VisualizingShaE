@@ -1,315 +1,315 @@
-1 20 37 -5 0 11 -3 0 -3 -41  PrimeWitness: 0
-1 7 9 0 0 5 1 0 -9 -4  PrimeWitness: 0
-1 4 12 4 1 3 -2 6 -5 -5  PrimeWitness: 0
-1 2 17 2 0 0 -7 0 4 -10  PrimeWitness: 0
-1 1 11 1 0 0 -2 0 1 -6  PrimeWitness: 0
-1 23 225 1 0 4 1 0 30 30  PrimeWitness: 0
-1 1 4 -1 0 4 5 0 0 8  PrimeWitness: 0
-1 1 12 -1 0 0 -1 0 16 0  PrimeWitness: 0
-1 1 3 0 1 1 2 -3 0 -4  PrimeWitness: 0
-1 1 2 4 0 -3 -4 0 7 -4  PrimeWitness: 0
-1 3 4 4 0 1 -3 0 0 -6  PrimeWitness: 0
-1 1 4 -2 0 2 2 0 1 -2  PrimeWitness: 0
-1 1 4 2 0 1 -3 0 1 -4  PrimeWitness: 0
-1 3 9 3 0 2 7 0 -6 -6  PrimeWitness: 0
-3 13 5 10 15 2 16 -15 -7 -14  PrimeWitness: 0
-1 3 9 -1 3 3 22 -9 1 -8  PrimeWitness: 0
-1 1 26 0 0 1 4 0 -9 -8  PrimeWitness: 0
-3 4 5 -2 0 0 2 0 1 -12  PrimeWitness: 0
-3 3 7 5 0 1 -4 0 5 -4  PrimeWitness: 0
-2 1 1 0 3 3 7 -3 -2 -3  PrimeWitness: 0
-1 2 2 5 0 1 -6 0 5 -5  PrimeWitness: 0
-9 3 54 -11 2 38 86 -18 -72 -61  PrimeWitness: 0
-1 1 3 -1 1 1 1 -3 -2 -4  PrimeWitness: 0
-4 16 1 20 12 33 26 6 13 34  PrimeWitness: 0
-4 5 9 2 3 -9 -5 9 15 -12  PrimeWitness: 0
-2 16 1 5 3 -4 32 -3 69 -6  PrimeWitness: 0
-1 1 2 2 0 4 -1 0 -1 1  PrimeWitness: 0
-1 3 6 0 2 0 7 -6 0 -9  PrimeWitness: 0
-2 2 9 3 0 -4 1 0 12 -12  PrimeWitness: 0
-1 1 4 1 0 0 7 0 4 -2  PrimeWitness: 0
-1 3 4 2 0 -1 -1 0 22 -2  PrimeWitness: 0
-4 2 7 8 0 -3 -1 0 15 -16  PrimeWitness: 0
-4 5 31 4 0 7 -6 0 4 -14  PrimeWitness: 0
-3 3 4 -5 0 -9 10 0 -1 8  PrimeWitness: 0
-1 5 9 -1 0 6 -1 0 -2 8  PrimeWitness: 0
-1 1 5 0 0 -1 1 0 3 -5  PrimeWitness: 0
-4 1 3 -9 4 -8 -21 -6 16 -4  PrimeWitness: 0
-2 1 3 5 0 0 -4 0 5 -8  PrimeWitness: 0
-1 1 4 2 0 1 1 0 1 -4  PrimeWitness: 0
-1 3 4 3 0 2 -5 0 0 -6  PrimeWitness: 0
-1 3 4 -1 0 0 3 0 0 -6  PrimeWitness: 0
-4 3 3 8 4 1 -10 6 7 -2  PrimeWitness: 0
-3 9 16 1 0 4 9 0 4 -6  PrimeWitness: 0
-1 2 4 2 0 -1 -3 0 5 -7  PrimeWitness: 0
-1 1 4 2 0 0 2 0 1 -2  PrimeWitness: 0
-1 5 16 -1 0 2 3 0 -8 -4  PrimeWitness: 0
-5 4 1 4 12 6 17 -6 3 1  PrimeWitness: 0
-3 4 32 1 0 1 1 0 -16 -22  PrimeWitness: 0
-1 1 2 2 0 0 -2 0 3 -4  PrimeWitness: 0
-1 1 2 2 0 1 0 0 -1 -2  PrimeWitness: 0
-1 2 4 1 0 0 -2 0 1 -6  PrimeWitness: 0
-1 1 2 1 0 2 0 0 5 -1  PrimeWitness: 0
-1 1 3 2 0 0 2 0 1 1  PrimeWitness: 0
-1 1 4 -1 0 -2 3 0 -4 6  PrimeWitness: 0
-3 3 4 7 3 1 -2 6 8 -8  PrimeWitness: 0
-1 1 5 0 0 1 1 0 -3 -5  PrimeWitness: 0
-1 1 2 -2 0 2 3 0 0 -4  PrimeWitness: 0
-1 1 2 3 0 1 -3 0 2 -4  PrimeWitness: 0
-1 4 9 0 0 -4 0 0 9 -10  PrimeWitness: 0
-1 3 3 0 1 1 7 -3 1 -4  PrimeWitness: 0
-1 1 4 2 0 -1 -1 0 4 -6  PrimeWitness: 0
-1 1 2 1 0 -1 0 0 3 -4  PrimeWitness: 0
-1 1 2 -1 0 1 1 0 0 -4  PrimeWitness: 0
-1 1 2 0 0 2 1 0 -2 -4  PrimeWitness: 0
-1 1 1 -1 12 1 18 -6 11 -11  PrimeWitness: 0
-1 1 2 2 0 -2 0 0 4 -5  PrimeWitness: 0
-1 1 2 1 0 2 -1 0 1 2  PrimeWitness: 0
-4 1 4 2 3 -6 -7 -6 -2 -11  PrimeWitness: 0
-1 10 25 28 12 17 38 -30 10 6  PrimeWitness: 0
-1 1 24 0 0 2 10 0 -11 2  PrimeWitness: 0
-3 4 3 5 9 5 10 -9 -8 0  PrimeWitness: 0
-4 7 75 8 4 -3 71 -30 -110 -112  PrimeWitness: 0
-5 1 8 9 6 -4 -7 12 20 0  PrimeWitness: 0
-1 1 9 0 3 2 7 -9 -6 -12  PrimeWitness: 0
-1 3 9 2 0 -3 -5 0 -3 -6  PrimeWitness: 0
-1 4 9 0 0 2 1 0 -6 -6  PrimeWitness: 0
-1 3 9 1 0 0 -3 0 1 -9  PrimeWitness: 0
-4 1 7 0 0 -9 4 0 11 2  PrimeWitness: 0
-1 1 6 3 2 -3 -4 6 17 -1  PrimeWitness: 0
-1 4 4 1 0 -1 -1 0 2 -8  PrimeWitness: 0
-4 8 9 -6 0 7 -17 0 3 6  PrimeWitness: 0
-1 1 3 2 0 -1 -2 0 2 -5  PrimeWitness: 0
-1 2 4 1 0 0 1 0 2 -2  PrimeWitness: 0
-1 6 1 1 3 -1 13 -3 16 -8  PrimeWitness: 0
-1 1 108 -1 0 1 2 0 -3 -31  PrimeWitness: 0
-1 1 1 1 3 -1 0 -3 -9 -1  PrimeWitness: 0
-2 2 3 1 0 0 -3 0 0 -7  PrimeWitness: 0
-4 9 16 -14 3 -17 -13 -12 -68 25  PrimeWitness: 0
-1 7 16 2 0 -5 9 0 0 -2  PrimeWitness: 0
-1 1 2 -1 0 3 1 0 0 2  PrimeWitness: 0
-1 1 1 0 3 1 7 -3 -5 -2  PrimeWitness: 0
-1 7 9 -1 0 -1 4 0 3 -12  PrimeWitness: 0
-4 3 9 2 3 -7 -2 9 15 -8  PrimeWitness: 0
-3 14 32 6 0 1 -21 0 0 -34  PrimeWitness: 0
-1 1 1 3 3 5 0 -3 11 -3  PrimeWitness: 0
-1 1 4 1 0 0 3 0 0 -2  PrimeWitness: 0
-1 1 4 -1 0 2 -1 0 0 -2  PrimeWitness: 0
-1 1 3 -1 1 0 1 -3 -1 -7  PrimeWitness: 0
-1 2 9 -1 3 -1 1 -9 12 6  PrimeWitness: 0
-3 3 192 3 1 2 -9 24 -4 -36  PrimeWitness: 0
-1 1 2 3 0 -1 -2 0 1 -6  PrimeWitness: 0
-2 3 3 -3 1 -1 2 3 3 -3  PrimeWitness: 0
-1 4 1 2 12 -2 14 6 -1 -10  PrimeWitness: 0
-2 3 3 11 0 2 -11 0 11 -10  PrimeWitness: 0
-3 1 8 3 6 6 19 -12 8 10  PrimeWitness: 0
-5 4 3 1 9 8 22 -9 -11 -9  PrimeWitness: 0
-1 2 3 -2 1 2 0 -3 -1 -8  PrimeWitness: 0
-1 3 1 2 3 0 -2 -3 -7 0  PrimeWitness: 0
-1 2 2 -1 0 1 -2 0 3 -3  PrimeWitness: 0
-1 1 9 0 12 3 41 -18 -17 -6  PrimeWitness: 0
-1 1 3 -2 0 2 4 0 -1 -5  PrimeWitness: 0
-1 1 6 -1 0 0 2 0 1 -5  PrimeWitness: 0
-1 4 4 0 0 -1 1 0 -4 -14  PrimeWitness: 0
-2 1 3 3 1 4 7 -3 1 4  PrimeWitness: 0
-1 1 2 1 0 0 -1 0 1 -4  PrimeWitness: 0
-11 1 27 10 4 31 -17 18 -27 -46  PrimeWitness: 0
-1 2 3 1 1 0 3 -3 -1 -5  PrimeWitness: 0
-2 3 3 1 0 -4 1 0 5 -8  PrimeWitness: 0
-11 12 59 7 0 -1 -4 0 50 -53  PrimeWitness: 0
-1 3 13 -1 0 2 4 0 5 -10  PrimeWitness: 0
-9 12 14 -26 0 0 20 0 11 -64  PrimeWitness: 0
-1 1 2 3 0 2 2 0 2 -3  PrimeWitness: 0
-1 1 3 -3 0 -2 2 0 14 -9  PrimeWitness: 0
-1 1 3 6 1 1 -2 -3 -10 -5  PrimeWitness: 0
-1 5 17 1 0 1 -4 0 -3 -13  PrimeWitness: 0
-1 8 16 -1 0 4 8 0 -11 -16  PrimeWitness: 0
-1 1 1 0 3 2 3 -3 -4 -2  PrimeWitness: 0
-1 1 3 -2 0 1 1 0 -3 -4  PrimeWitness: 0
-2 4 7 1 0 -1 8 0 1 9  PrimeWitness: 0
-1 2 2 1 6 0 7 -6 -2 -6  PrimeWitness: 0
-1 4 6 -2 0 0 6 0 3 -8  PrimeWitness: 0
-1 4 5 0 0 -1 0 0 2 -8  PrimeWitness: 0
-1 1 2 0 0 -1 -1 0 -4 -12  PrimeWitness: 0
-1 6 75 2 0 -2 -12 0 30 -25  PrimeWitness: 0
-1 2 54 8 0 1 -8 0 27 0  PrimeWitness: 0
-3 4 4 6 0 3 -3 0 4 -14  PrimeWitness: 0
-1 1 3 -1 4 2 11 -6 2 -6  PrimeWitness: 0
-1 1 4 -1 0 0 -1 0 0 0  PrimeWitness: 0
-4 2 7 1 0 3 19 0 13 7  PrimeWitness: 0
-1 3 1 1 3 2 10 -3 0 -2  PrimeWitness: 0
-3 16 15 6 5 5 10 -15 -12 -22  PrimeWitness: 0
-1 1 2 1 0 0 -1 0 -1 5  PrimeWitness: 0
-1 3 4 0 0 -2 1 0 11 -3  PrimeWitness: 0
-1 1 2 1 0 3 -2 0 3 0  PrimeWitness: 0
-1 1 2 1 0 2 -1 0 3 2  PrimeWitness: 0
-1 1 3 0 0 1 -2 0 -1 2  PrimeWitness: 0
-1 1 2 0 0 2 -2 0 10 3  PrimeWitness: 0
-1 1 3 7 0 -5 8 0 19 -8  PrimeWitness: 0
-1 2 4 3 0 0 -5 0 4 -6  PrimeWitness: 0
-1 7 15 1 0 -5 -2 0 13 -14  PrimeWitness: 0
-2 4 3 -2 1 -9 -18 3 22 -2  PrimeWitness: 0
-3 5 27 -2 1 13 -4 9 -12 6  PrimeWitness: 0
-1 1 4 -1 0 0 1 0 2 -4  PrimeWitness: 0
-1 1 2 1 0 -2 4 0 1 0  PrimeWitness: 0
-1 3 15 0 0 -1 -6 0 -3 -7  PrimeWitness: 0
-1 2 2 -1 0 -1 3 0 2 -4  PrimeWitness: 0
-1 1 4 -1 0 2 -1 0 0 2  PrimeWitness: 0
-3 4 8 -3 6 5 29 -12 5 -18  PrimeWitness: 0
-1 1 6 2 0 0 -4 0 13 0  PrimeWitness: 0
-4 3 79 8 0 1 15 0 0 14  PrimeWitness: 0
-1 1 2 1 0 3 -3 0 5 1  PrimeWitness: 0
-1 1 2 1 6 2 7 -6 -1 3  PrimeWitness: 0
-3 7 8 11 6 2 -3 -12 0 -18  PrimeWitness: 0
-1 1 5 -8 0 5 7 0 5 0  PrimeWitness: 0
-3 5 50 5 0 1 -2 0 15 -10  PrimeWitness: 0
-1 1 2 -1 0 0 1 0 0 -1  PrimeWitness: 0
-1 1 3 1 1 5 13 -3 8 8  PrimeWitness: 0
-1 2 4 1 0 -3 -1 0 6 -7  PrimeWitness: 0
-2 5 3 1 0 -6 3 0 14 -7  PrimeWitness: 0
-1 1 18 1 6 2 14 -18 -21 0  PrimeWitness: 0
-5 5 4 -4 3 1 -8 6 8 -1  PrimeWitness: 0
-4 3 9 5 3 -5 13 9 6 0  PrimeWitness: 0
-1 23 36 1 3 0 37 -18 -6 -30  PrimeWitness: 0
-1 4 6 -2 0 3 10 0 3 -2  PrimeWitness: 0
-1 1 6 -2 0 5 7 0 6 -4  PrimeWitness: 0
-1 2 4 -1 0 1 1 0 0 -4  PrimeWitness: 0
-1 1 3 -1 1 0 6 -3 -3 -11  PrimeWitness: 0
-2 2 9 -2 0 -1 10 0 -12 9  PrimeWitness: 0
-3 1 6 -6 2 7 -1 6 -4 9  PrimeWitness: 0
-3 3 4 1 0 6 3 0 -7 -10  PrimeWitness: 0
-8 20 25 9 12 -32 -41 30 65 -12  PrimeWitness: 0
-1 1 9 0 0 -1 4 0 -6 3  PrimeWitness: 0
-1 4 17 -2 0 0 8 0 5 -16  PrimeWitness: 0
-1 5 12 1 4 6 13 -12 2 0  PrimeWitness: 0
-1 1 2 -1 0 2 -3 0 -5 -2  PrimeWitness: 0
-1 1 2 1 0 0 1 0 1 0  PrimeWitness: 0
-1 3 4 1 0 -1 1 0 1 -5  PrimeWitness: 0
-1 2 6 4 2 -5 -9 6 23 1  PrimeWitness: 0
-1 2 11 1 0 0 -3 0 1 -9  PrimeWitness: 0
-1 9 9 2 3 1 10 -9 -6 -12  PrimeWitness: 0
-1 1 2 0 0 4 -4 0 7 -3  PrimeWitness: 0
-1 1 3 -1 0 1 1 0 -1 -4  PrimeWitness: 0
-3 3 4 3 3 2 7 -6 -1 -3  PrimeWitness: 0
-3 2 8 -1 6 0 13 -12 4 -8  PrimeWitness: 0
-1 2 3 -1 0 -1 3 0 3 -5  PrimeWitness: 0
-6 9 5 16 15 12 6 -15 -11 -2  PrimeWitness: 0
-1 1 1 0 3 1 6 -3 3 -2  PrimeWitness: 0
-2 6 17 -1 0 -1 -10 0 10 5  PrimeWitness: 0
-1 10 13 1 0 -3 2 0 11 -16  PrimeWitness: 0
-1 1 9 0 0 1 1 0 6 -6  PrimeWitness: 0
-2 7 9 6 3 -4 13 9 3 -21  PrimeWitness: 0
-2 5 5 5 0 1 -9 0 4 -12  PrimeWitness: 0
-1 5 13 -1 0 0 4 0 1 -12  PrimeWitness: 0
-5 6 24 4 0 1 4 0 -11 8  PrimeWitness: 0
-3 26 98 -1 0 14 -3 0 -35 -49  PrimeWitness: 0
-1 1 2 -1 0 0 1 0 0 0  PrimeWitness: 0
-4 9 13 16 0 9 11 0 14 12  PrimeWitness: 0
-1 12 27 2 9 7 88 -27 -27 0  PrimeWitness: 0
-2 1 3 -1 0 2 -5 0 -1 1  PrimeWitness: 0
-1 2 4 0 0 2 4 0 13 0  PrimeWitness: 0
-5 4 32 20 6 -6 -41 24 78 -1  PrimeWitness: 0
-1 1 3 4 0 -3 -4 0 11 -5  PrimeWitness: 0
-1 5 9 3 0 -4 -5 0 15 -12  PrimeWitness: 0
-1 1 3 0 1 2 6 -3 -3 -4  PrimeWitness: 0
-1 3 4 5 0 0 5 0 4 -4  PrimeWitness: 0
-1 3 4 1 0 2 6 0 -1 -2  PrimeWitness: 0
-3 3 4 0 3 -5 -3 6 6 -5  PrimeWitness: 0
-1 1 3 1 0 0 -1 0 5 1  PrimeWitness: 0
-1 1 4 2 0 1 -1 0 0 -4  PrimeWitness: 0
-1 1 6 -1 0 0 -2 0 1 2  PrimeWitness: 0
-2 10 9 3 12 -4 28 -18 -30 -18  PrimeWitness: 0
-1 1 3 0 0 1 -5 0 2 9  PrimeWitness: 0
-4 3 1 -1 0 5 6 0 16 7  PrimeWitness: 0
-1 1 6 0 8 5 48 -12 19 0  PrimeWitness: 0
-4 3 3 1 0 8 -3 0 29 8  PrimeWitness: 0
-1 1 32 -1 0 0 -1 0 8 -2  PrimeWitness: 0
-3 4 4 6 0 0 -4 0 1 -16  PrimeWitness: 0
-1 1 3 -1 4 6 31 -6 -5 -7  PrimeWitness: 0
-2 9 9 6 3 -10 -5 -9 3 3  PrimeWitness: 0
-1 3 9 2 3 2 7 -9 -6 -3  PrimeWitness: 0
-1 4 8 3 6 2 13 -12 -36 -2  PrimeWitness: 0
-1 5 11 2 0 -5 -5 0 -10 -9  PrimeWitness: 0
-1 1 2 2 0 -3 -1 0 1 -9  PrimeWitness: 0
-2 4 19 1 0 4 4 0 -1 -2  PrimeWitness: 0
-1 2 4 -2 0 3 -3 0 4 0  PrimeWitness: 0
-7 11 18 0 6 15 35 -18 -24 -30  PrimeWitness: 0
-3 4 4 4 0 -4 3 0 0 -6  PrimeWitness: 0
-1 1 4 2 0 6 -1 0 0 -2  PrimeWitness: 0
-1 1 3 0 1 2 7 -3 -2 -1  PrimeWitness: 0
-3 6 8 12 6 7 3 -12 12 10  PrimeWitness: 0
-2 3 3 -3 0 -1 4 0 3 -7  PrimeWitness: 0
-1 3 4 -2 0 1 4 0 0 -7  PrimeWitness: 0
-1 2 16 1 3 -2 3 -12 -32 -3  PrimeWitness: 0
-1 1 3 -1 0 4 4 0 2 2  PrimeWitness: 0
-1 1 5 -1 0 2 3 0 -4 -6  PrimeWitness: 0
-2 1 4 6 3 -8 -1 6 9 1  PrimeWitness: 0
-1 1 11 -1 0 2 5 0 -5 -8  PrimeWitness: 0
-1 1 2 -1 0 0 1 0 1 -3  PrimeWitness: 0
-1 1 2 4 0 2 0 0 6 3  PrimeWitness: 0
-9 15 100 -6 0 -17 41 0 -80 30  PrimeWitness: 0
-1 2 3 7 0 -1 2 0 26 3  PrimeWitness: 0
-1 1 3 2 0 1 1 0 -1 -4  PrimeWitness: 0
-1 2 12 -2 1 7 -1 6 14 -13  PrimeWitness: 0
-2 12 27 5 9 3 38 -27 0 -18  PrimeWitness: 0
-1 1 2 1 0 0 1 0 5 -2  PrimeWitness: 0
-1 1 4 -2 0 -1 -3 0 2 -4  PrimeWitness: 0
-1 1 10 1 0 -2 -4 0 2 -7  PrimeWitness: 0
-1 1 9 2 0 -1 7 0 -6 3  PrimeWitness: 0
-1 4 5 -1 0 -2 4 0 4 -8  PrimeWitness: 0
-1 1 10 -1 0 -2 12 0 -6 1  PrimeWitness: 0
-1 7 1 6 12 -2 12 -6 -3 -9  PrimeWitness: 0
-2 3 3 3 1 0 -7 3 3 -6  PrimeWitness: 0
-1 9 24 0 0 -1 0 0 1 -18  PrimeWitness: 0
-1 1 6 1 0 4 8 0 -10 3  PrimeWitness: 0
-11 21 81 10 3 10 16 -27 45 -90  PrimeWitness: 0
-1 1 9 1 3 4 19 -9 -21 0  PrimeWitness: 0
-2 2 9 5 0 2 4 0 -6 0  PrimeWitness: 0
-1 1 4 1 0 -1 -3 0 4 -6  PrimeWitness: 0
-1 3 24 1 0 7 0 0 -10 1  PrimeWitness: 0
-1 1 4 1 0 0 -1 0 0 -4  PrimeWitness: 0
-1 33 50 4 6 2 37 -30 -40 -31  PrimeWitness: 0
-1 1 3 3 0 1 -1 0 -6 -4  PrimeWitness: 0
-2 5 16 4 3 -2 -21 12 20 -10  PrimeWitness: 0
-3 2 3 3 1 6 9 -3 5 5  PrimeWitness: 0
-1 2 4 1 12 0 13 -12 -4 -10  PrimeWitness: 0
-1 1 3 -1 0 4 5 0 -5 -6  PrimeWitness: 0
-1 1 4 -1 0 3 4 0 -5 -6  PrimeWitness: 0
-1 11 16 1 0 1 19 0 8 -2  PrimeWitness: 0
-1 2 2 0 0 0 -1 0 -2 -8  PrimeWitness: 0
-1 1 4 0 3 1 6 -6 -3 -5  PrimeWitness: 0
-1 1 3 1 1 2 7 -3 5 0  PrimeWitness: 0
-1 1 4 0 3 1 6 -6 -7 -1  PrimeWitness: 0
-2 2 4 1 3 -3 -1 6 10 -3  PrimeWitness: 0
-23 85 108 2 9 -33 -47 54 54 -153  PrimeWitness: 0
-1 1 5 -5 0 -4 -5 0 -5 8  PrimeWitness: 0
-1 2 4 0 0 -2 1 0 4 -4  PrimeWitness: 0
-2 2 4 11 3 2 -13 6 24 5  PrimeWitness: 0
-1 1 4 1 0 4 -1 0 0 -2  PrimeWitness: 0
-1 2 3 2 0 -2 3 0 0 -2  PrimeWitness: 0
-3 3 3 1 4 -5 3 6 10 2  PrimeWitness: 0
-1 2 2 2 0 -1 -3 0 3 -5  PrimeWitness: 0
-1 1 4 0 0 2 3 0 -4 -6  PrimeWitness: 0
-1 1 4 1 0 -1 0 0 7 -3  PrimeWitness: 0
-1 1 2 0 0 1 0 0 -1 -3  PrimeWitness: 0
-1 1 3 -2 0 1 2 0 0 -5  PrimeWitness: 0
-1 1 9 -1 0 0 4 0 0 -1  PrimeWitness: 0
-3 2 4 2 3 5 10 -6 7 3  PrimeWitness: 0
-1 1 9 1 0 0 4 0 -3 -6  PrimeWitness: 0
-1 16 24 -2 0 -3 15 0 4 -22  PrimeWitness: 0
-1 1 3 1 1 3 8 -3 5 3  PrimeWitness: 0
-2 8 3 47 1 -8 52 3 86 -14  PrimeWitness: 0
-1 1 4 -1 0 0 1 0 5 -3  PrimeWitness: 0
-1 2 10 2 0 -1 -6 0 14 -3  PrimeWitness: 0
-1 2 2 4 0 -3 -3 0 6 -6  PrimeWitness: 0
-1 1 1 -5 3 4 -4 -3 4 -15  PrimeWitness: 0
-1 2 4 1 0 1 -1 0 -2 -3  PrimeWitness: 0
-1 4 2 3 6 0 7 -6 -2 -6  PrimeWitness: 0
-2 2 27 2 0 1 -5 0 0 -12  PrimeWitness: 0
-1 1 4 -1 0 1 3 0 -2 0  PrimeWitness: 0
-2 2 3 2 1 -5 0 3 8 -4  PrimeWitness: 0
-1 3 100 1 0 -1 4 0 -15 0  PrimeWitness: 0
-1 1 5 2 0 1 -2 0 3 -6  PrimeWitness: 0
-1 2 6 2 2 2 9 -6 -1 -5  PrimeWitness: 0
-1 1 5 -6 0 2 -3 0 -7 1  PrimeWitness: 0
-8 36 12 8 49 -7 -51 -42 56 -1  PrimeWitness: 0
+2955b4 1 20 37 -5 0 11 -3 0 -3 -41 PrimeWitness: 0
+5808h1 1 7 9 0 0 5 1 0 -9 -4 PrimeWitness: 0
+5982i1 1 4 12 4 1 3 -2 6 -5 -5 PrimeWitness: 0
+7968b1 1 2 17 2 0 0 -7 0 4 -10 PrimeWitness: 0
+8657b1 1 1 11 1 0 0 -2 0 1 -6 PrimeWitness: 0
+9225s2 1 23 225 1 0 4 1 0 30 30 PrimeWitness: 0
+11712l1 1 1 4 -1 0 4 5 0 0 8 PrimeWitness: 0
+11712l1 1 1 12 -1 0 0 -1 0 16 0 PrimeWitness: 0
+14736k1 1 1 3 0 1 1 2 -3 0 -4 PrimeWitness: 0
+16168c2 1 1 2 4 0 -3 -4 0 7 -4 PrimeWitness: 0
+17928c1 1 3 4 4 0 1 -3 0 0 -6 PrimeWitness: 0
+18656b1 1 1 4 -2 0 2 2 0 1 -2 PrimeWitness: 0
+19371b1 1 1 4 2 0 1 -3 0 1 -4 PrimeWitness: 0
+19575j1 1 3 9 3 0 2 7 0 -6 -6 PrimeWitness: 0
+19812a2 3 13 5 10 15 2 16 -15 -7 -14 PrimeWitness: 0
+100040b1 1 3 9 -1 3 3 22 -9 1 -8 PrimeWitness: 0
+101688d2 1 1 26 0 0 1 4 0 -9 -8 PrimeWitness: 0
+102460c1 3 4 5 -2 0 0 2 0 1 -12 PrimeWitness: 0
+102528q2 3 3 7 5 0 1 -4 0 5 -4 PrimeWitness: 0
+102951b1 2 1 1 0 3 3 7 -3 -2 -3 PrimeWitness: 0
+106003a1 1 2 2 5 0 1 -6 0 5 -5 PrimeWitness: 0
+108486cp1 9 3 54 -11 2 38 86 -18 -72 -61 PrimeWitness: 0
+108672g1 1 1 3 -1 1 1 1 -3 -2 -4 PrimeWitness: 0
+111592a1 4 16 1 20 12 33 26 6 13 34 PrimeWitness: 0
+111708g2 4 5 9 2 3 -9 -5 9 15 -12 PrimeWitness: 0
+113344bf1 2 16 1 5 3 -4 32 -3 69 -6 PrimeWitness: 0
+114619a1 1 1 2 2 0 4 -1 0 -1 1 PrimeWitness: 0
+115266a1 1 3 6 0 2 0 7 -6 0 -9 PrimeWitness: 0
+116028e1 2 2 9 3 0 -4 1 0 12 -12 PrimeWitness: 0
+116656b2 1 1 4 1 0 0 7 0 4 -2 PrimeWitness: 0
+117436b1 1 3 4 2 0 -1 -1 0 22 -2 PrimeWitness: 0
+119040s2 4 2 7 8 0 -3 -1 0 15 -16 PrimeWitness: 0
+121520bc1 4 5 31 4 0 7 -6 0 4 -14 PrimeWitness: 0
+121848a1 3 3 4 -5 0 -9 10 0 -1 8 PrimeWitness: 0
+124315f1 1 5 9 -1 0 6 -1 0 -2 8 PrimeWitness: 0
+125166j1 1 1 5 0 0 -1 1 0 3 -5 PrimeWitness: 0
+125560b1 4 1 3 -9 4 -8 -21 -6 16 -4 PrimeWitness: 0
+126256i1 2 1 3 5 0 0 -4 0 5 -8 PrimeWitness: 0
+126259a1 1 1 4 2 0 1 1 0 1 -4 PrimeWitness: 0
+126792a1 1 3 4 3 0 2 -5 0 0 -6 PrimeWitness: 0
+126792a1 1 3 4 -1 0 0 3 0 0 -6 PrimeWitness: 0
+128072b1 4 3 3 8 4 1 -10 6 7 -2 PrimeWitness: 0
+128516a1 3 9 16 1 0 4 9 0 4 -6 PrimeWitness: 0
+129286a1 1 2 4 2 0 -1 -3 0 5 -7 PrimeWitness: 0
+129952a1 1 1 4 2 0 0 2 0 1 -2 PrimeWitness: 0
+130112r1 1 5 16 -1 0 2 3 0 -8 -4 PrimeWitness: 0
+130525i1 5 4 1 4 12 6 17 -6 3 1 PrimeWitness: 0
+132360d2 3 4 32 1 0 1 1 0 -16 -22 PrimeWitness: 0
+132684a1 1 1 2 2 0 0 -2 0 3 -4 PrimeWitness: 0
+134156a1 1 1 2 2 0 1 0 0 -1 -2 PrimeWitness: 0
+134320p1 1 2 4 1 0 0 -2 0 1 -6 PrimeWitness: 0
+135203a1 1 1 2 1 0 2 0 0 5 -1 PrimeWitness: 0
+135203a1 1 1 3 2 0 0 2 0 1 1 PrimeWitness: 0
+135536d2 1 1 4 -1 0 -2 3 0 -4 6 PrimeWitness: 0
+137604d1 3 3 4 7 3 1 -2 6 8 -8 PrimeWitness: 0
+137622b1 1 1 5 0 0 1 1 0 -3 -5 PrimeWitness: 0
+137904u1 1 1 2 -2 0 2 3 0 0 -4 PrimeWitness: 0
+137904u1 1 1 2 3 0 1 -3 0 2 -4 PrimeWitness: 0
+138648e2 1 4 9 0 0 -4 0 0 9 -10 PrimeWitness: 0
+139648b1 1 3 3 0 1 1 7 -3 1 -4 PrimeWitness: 0
+141108a1 1 1 4 2 0 -1 -1 0 4 -6 PrimeWitness: 0
+141504cv1 1 1 2 1 0 -1 0 0 3 -4 PrimeWitness: 0
+141504cv1 1 1 2 -1 0 1 1 0 0 -4 PrimeWitness: 0
+141504cv1 1 1 2 0 0 2 1 0 -2 -4 PrimeWitness: 0
+141957b1 1 1 1 -1 12 1 18 -6 11 -11 PrimeWitness: 0
+145362h1 1 1 2 2 0 -2 0 0 4 -5 PrimeWitness: 0
+146043b1 1 1 2 1 0 2 -1 0 1 2 PrimeWitness: 0
+146482c1 4 1 4 2 3 -6 -7 -6 -2 -11 PrimeWitness: 0
+146640cl1 1 10 25 28 12 17 38 -30 10 6 PrimeWitness: 0
+147936m3 1 1 24 0 0 2 10 0 -11 2 PrimeWitness: 0
+150771b1 3 4 3 5 9 5 10 -9 -8 0 PrimeWitness: 0
+152640fo1 4 7 75 8 4 -3 71 -30 -110 -112 PrimeWitness: 0
+152912d1 5 1 8 9 6 -4 -7 12 20 0 PrimeWitness: 0
+154620b1 1 1 9 0 3 2 7 -9 -6 -12 PrimeWitness: 0
+157824g1 1 3 9 2 0 -3 -5 0 -3 -6 PrimeWitness: 0
+160272br1 1 4 9 0 0 2 1 0 -6 -6 PrimeWitness: 0
+160671n1 1 3 9 1 0 0 -3 0 1 -9 PrimeWitness: 0
+160680j1 4 1 7 0 0 -9 4 0 11 2 PrimeWitness: 0
+161206a1 1 1 6 3 2 -3 -4 6 17 -1 PrimeWitness: 0
+162444g1 1 4 4 1 0 -1 -1 0 2 -8 PrimeWitness: 0
+162900bl1 4 8 9 -6 0 7 -17 0 3 6 PrimeWitness: 0
+163231a1 1 1 3 2 0 -1 -2 0 2 -5 PrimeWitness: 0
+165468a1 1 2 4 1 0 0 1 0 2 -2 PrimeWitness: 0
+166104c1 1 6 1 1 3 -1 13 -3 16 -8 PrimeWitness: 0
+166902b1 1 1 108 -1 0 1 2 0 -3 -31 PrimeWitness: 0
+167574c2 1 1 1 1 3 -1 0 -3 -9 -1 PrimeWitness: 0
+168087a1 2 2 3 1 0 0 -3 0 0 -7 PrimeWitness: 0
+171630r1 4 9 16 -14 3 -17 -13 -12 -68 25 PrimeWitness: 0
+171672c1 1 7 16 2 0 -5 9 0 0 -2 PrimeWitness: 0
+172608w1 1 1 2 -1 0 3 1 0 0 2 PrimeWitness: 0
+172608w2 1 1 1 0 3 1 7 -3 -5 -2 PrimeWitness: 0
+174672j1 1 7 9 -1 0 -1 4 0 3 -12 PrimeWitness: 0
+175728k2 4 3 9 2 3 -7 -2 9 15 -8 PrimeWitness: 0
+176952a2 3 14 32 6 0 1 -21 0 0 -34 PrimeWitness: 0
+177242e1 1 1 1 3 3 5 0 -3 11 -3 PrimeWitness: 0
+177864c1 1 1 4 1 0 0 3 0 0 -2 PrimeWitness: 0
+177864c1 1 1 4 -1 0 2 -1 0 0 -2 PrimeWitness: 0
+178702a1 1 1 3 -1 1 0 1 -3 -1 -7 PrimeWitness: 0
+180144p1 1 2 9 -1 3 -1 1 -9 12 6 PrimeWitness: 0
+180432o1 3 3 192 3 1 2 -9 24 -4 -36 PrimeWitness: 0
+182968a1 1 1 2 3 0 -1 -2 0 1 -6 PrimeWitness: 0
+183549c1 2 3 3 -3 1 -1 2 3 3 -3 PrimeWitness: 0
+184248c1 1 4 1 2 12 -2 14 6 -1 -10 PrimeWitness: 0
+187200cg1 2 3 3 11 0 2 -11 0 11 -10 PrimeWitness: 0
+187368g1 3 1 8 3 6 6 19 -12 8 10 PrimeWitness: 0
+187626k2 5 4 3 1 9 8 22 -9 -11 -9 PrimeWitness: 0
+188976bg1 1 2 3 -2 1 2 0 -3 -1 -8 PrimeWitness: 0
+188976bg1 1 3 1 2 3 0 -2 -3 -7 0 PrimeWitness: 0
+190453a1 1 2 2 -1 0 1 -2 0 3 -3 PrimeWitness: 0
+191808bz1 1 1 9 0 12 3 41 -18 -17 -6 PrimeWitness: 0
+194047a1 1 1 3 -2 0 2 4 0 -1 -5 PrimeWitness: 0
+194047a1 1 1 6 -1 0 0 2 0 1 -5 PrimeWitness: 0
+195240a2 1 4 4 0 0 -1 1 0 -4 -14 PrimeWitness: 0
+195696p1 2 1 3 3 1 4 7 -3 1 4 PrimeWitness: 0
+20627a1 1 1 2 1 0 0 -1 0 1 -4 PrimeWitness: 0
+20808k4 11 1 27 10 4 31 -17 18 -27 -46 PrimeWitness: 0
+21173a1 1 2 3 1 1 0 3 -3 -1 -5 PrimeWitness: 0
+23232bc1 2 3 3 1 0 -4 1 0 5 -8 PrimeWitness: 0
+24969a3 11 12 59 7 0 -1 -4 0 50 -53 PrimeWitness: 0
+26217a1 1 3 13 -1 0 2 4 0 5 -10 PrimeWitness: 0
+26688i1 9 12 14 -26 0 0 20 0 11 -64 PrimeWitness: 0
+27854d1 1 1 2 3 0 2 2 0 2 -3 PrimeWitness: 0
+29177a3 1 1 3 -3 0 -2 2 0 14 -9 PrimeWitness: 0
+29177a3 1 1 3 6 1 1 -2 -3 -10 -5 PrimeWitness: 0
+200397d2 1 5 17 1 0 1 -4 0 -3 -13 PrimeWitness: 0
+200816e1 1 8 16 -1 0 4 8 0 -11 -16 PrimeWitness: 0
+200832o1 1 1 1 0 3 2 3 -3 -4 -2 PrimeWitness: 0
+200976k1 1 1 3 -2 0 1 1 0 -3 -4 PrimeWitness: 0
+201445a2 2 4 7 1 0 -1 8 0 1 9 PrimeWitness: 0
+201792j1 1 2 2 1 6 0 7 -6 -2 -6 PrimeWitness: 0
+202956e1 1 4 6 -2 0 0 6 0 3 -8 PrimeWitness: 0
+202956e1 1 4 5 0 0 -1 0 0 2 -8 PrimeWitness: 0
+202960bg1 1 1 2 0 0 -1 -1 0 -4 -12 PrimeWitness: 0
+205050b1 1 6 75 2 0 -2 -12 0 30 -25 PrimeWitness: 0
+205200dz1 1 2 54 8 0 1 -8 0 27 0 PrimeWitness: 0
+206184f1 3 4 4 6 0 3 -3 0 4 -14 PrimeWitness: 0
+208521b1 1 1 3 -1 4 2 11 -6 2 -6 PrimeWitness: 0
+208832j1 1 1 4 -1 0 0 -1 0 0 0 PrimeWitness: 0
+210749k1 4 2 7 1 0 3 19 0 13 7 PrimeWitness: 0
+212664a1 1 3 1 1 3 2 10 -3 0 -2 PrimeWitness: 0
+212856u1 3 16 15 6 5 5 10 -15 -12 -22 PrimeWitness: 0
+213194a1 1 1 2 1 0 0 -1 0 -1 5 PrimeWitness: 0
+213647a1 1 3 4 0 0 -2 1 0 11 -3 PrimeWitness: 0
+214288a1 1 1 2 1 0 3 -2 0 3 0 PrimeWitness: 0
+215115b1 1 1 2 1 0 2 -1 0 3 2 PrimeWitness: 0
+215115b1 1 1 3 0 0 1 -2 0 -1 2 PrimeWitness: 0
+216242b1 1 1 2 0 0 2 -2 0 10 3 PrimeWitness: 0
+217296k1 1 1 3 7 0 -5 8 0 19 -8 PrimeWitness: 0
+217512a1 1 2 4 3 0 0 -5 0 4 -6 PrimeWitness: 0
+217768c2 1 7 15 1 0 -5 -2 0 13 -14 PrimeWitness: 0
+217768c3 2 4 3 -2 1 -9 -18 3 22 -2 PrimeWitness: 0
+221052c1 3 5 27 -2 1 13 -4 9 -12 6 PrimeWitness: 0
+221132a1 1 1 4 -1 0 0 1 0 2 -4 PrimeWitness: 0
+221216e1 1 1 2 1 0 -2 4 0 1 0 PrimeWitness: 0
+221691a2 1 3 15 0 0 -1 -6 0 -3 -7 PrimeWitness: 0
+222912bv1 1 2 2 -1 0 -1 3 0 2 -4 PrimeWitness: 0
+225912f1 1 1 4 -1 0 2 -1 0 0 2 PrimeWitness: 0
+226233m1 3 4 8 -3 6 5 29 -12 5 -18 PrimeWitness: 0
+228288m1 1 1 6 2 0 0 -4 0 13 0 PrimeWitness: 0
+229416o1 4 3 79 8 0 1 15 0 0 14 PrimeWitness: 0
+230590b1 1 1 2 1 0 3 -3 0 5 1 PrimeWitness: 0
+233094c1 1 1 2 1 6 2 7 -6 -1 3 PrimeWitness: 0
+234936p1 3 7 8 11 6 2 -3 -12 0 -18 PrimeWitness: 0
+235200zq1 1 1 5 -8 0 5 7 0 5 0 PrimeWitness: 0
+235200bcz1 3 5 50 5 0 1 -2 0 15 -10 PrimeWitness: 0
+235374g1 1 1 2 -1 0 0 1 0 0 -1 PrimeWitness: 0
+235488bb1 1 1 3 1 1 5 13 -3 8 8 PrimeWitness: 0
+236490g1 1 2 4 1 0 -3 -1 0 6 -7 PrimeWitness: 0
+237538w1 2 5 3 1 0 -6 3 0 14 -7 PrimeWitness: 0
+237816h1 1 1 18 1 6 2 14 -18 -21 0 PrimeWitness: 0
+238014w1 5 5 4 -4 3 1 -8 6 8 -1 PrimeWitness: 0
+240525h1 4 3 9 5 3 -5 13 9 6 0 PrimeWitness: 0
+242100g1 1 23 36 1 3 0 37 -18 -6 -30 PrimeWitness: 0
+242880fc1 1 4 6 -2 0 3 10 0 3 -2 PrimeWitness: 0
+242880fc1 1 1 6 -2 0 5 7 0 6 -4 PrimeWitness: 0
+242880ja1 1 2 4 -1 0 1 1 0 0 -4 PrimeWitness: 0
+243015b2 1 1 3 -1 1 0 6 -3 -3 -11 PrimeWitness: 0
+243342bb1 2 2 9 -2 0 -1 10 0 -12 9 PrimeWitness: 0
+244950bw1 3 1 6 -6 2 7 -1 6 -4 9 PrimeWitness: 0
+247251d1 3 3 4 1 0 6 3 0 -7 -10 PrimeWitness: 0
+247360w1 8 20 25 9 12 -32 -41 30 65 -12 PrimeWitness: 0
+248103f1 1 1 9 0 0 -1 4 0 -6 3 PrimeWitness: 0
+248384h1 1 4 17 -2 0 0 8 0 5 -16 PrimeWitness: 0
+249300bh1 1 5 12 1 4 6 13 -12 2 0 PrimeWitness: 0
+250491a1 1 1 2 -1 0 2 -3 0 -5 -2 PrimeWitness: 0
+252403a1 1 1 2 1 0 0 1 0 1 0 PrimeWitness: 0
+254070h1 1 3 4 1 0 -1 1 0 1 -5 PrimeWitness: 0
+256522b1 1 2 6 4 2 -5 -9 6 23 1 PrimeWitness: 0
+256645a1 1 2 11 1 0 0 -3 0 1 -9 PrimeWitness: 0
+256896bf2 1 9 9 2 3 1 10 -9 -6 -12 PrimeWitness: 0
+259199a1 1 1 2 0 0 4 -4 0 7 -3 PrimeWitness: 0
+259523c1 1 1 3 -1 0 1 1 0 -1 -4 PrimeWitness: 0
+260091n1 3 3 4 3 3 2 7 -6 -1 -3 PrimeWitness: 0
+260288ba1 3 2 8 -1 6 0 13 -12 4 -8 PrimeWitness: 0
+262869a1 1 2 3 -1 0 -1 3 0 3 -5 PrimeWitness: 0
+263241m1 6 9 5 16 15 12 6 -15 -11 -2 PrimeWitness: 0
+263571v1 1 1 1 0 3 1 6 -3 3 -2 PrimeWitness: 0
+267258a1 2 6 17 -1 0 -1 -10 0 10 5 PrimeWitness: 0
+267771b1 1 10 13 1 0 -3 2 0 11 -16 PrimeWitness: 0
+268515t1 1 1 9 0 0 1 1 0 6 -6 PrimeWitness: 0
+269010dy1 2 7 9 6 3 -4 13 9 3 -21 PrimeWitness: 0
+269709g1 2 5 5 5 0 1 -9 0 4 -12 PrimeWitness: 0
+269709g1 1 5 13 -1 0 0 4 0 1 -12 PrimeWitness: 0
+269712u1 5 6 24 4 0 1 4 0 -11 8 PrimeWitness: 0
+270039c1 3 26 98 -1 0 14 -3 0 -35 -49 PrimeWitness: 0
+270512w1 1 1 2 -1 0 0 1 0 0 0 PrimeWitness: 0
+270528bz2 4 9 13 16 0 9 11 0 14 12 PrimeWitness: 0
+270675e1 1 12 27 2 9 7 88 -27 -27 0 PrimeWitness: 0
+270854a1 2 1 3 -1 0 2 -5 0 -1 1 PrimeWitness: 0
+271040hk1 1 2 4 0 0 2 4 0 13 0 PrimeWitness: 0
+271650m2 5 4 32 20 6 -6 -41 24 78 -1 PrimeWitness: 0
+272731b1 1 1 3 4 0 -3 -4 0 11 -5 PrimeWitness: 0
+273024cd1 1 5 9 3 0 -4 -5 0 15 -12 PrimeWitness: 0
+274380j1 1 1 3 0 1 2 6 -3 -3 -4 PrimeWitness: 0
+274992d1 1 3 4 5 0 0 5 0 4 -4 PrimeWitness: 0
+275120l1 1 3 4 1 0 2 6 0 -1 -2 PrimeWitness: 0
+276306e1 3 3 4 0 3 -5 -3 6 6 -5 PrimeWitness: 0
+278707b1 1 1 3 1 0 0 -1 0 5 1 PrimeWitness: 0
+278976h1 1 1 4 2 0 1 -1 0 0 -4 PrimeWitness: 0
+280208h1 1 1 6 -1 0 0 -2 0 1 2 PrimeWitness: 0
+280512n1 2 10 9 3 12 -4 28 -18 -30 -18 PrimeWitness: 0
+281681b1 1 1 3 0 0 1 -5 0 2 9 PrimeWitness: 0
+282093k1 4 3 1 -1 0 5 6 0 16 7 PrimeWitness: 0
+282204g1 1 1 6 0 8 5 48 -12 19 0 PrimeWitness: 0
+282688q1 4 3 3 1 0 8 -3 0 29 8 PrimeWitness: 0
+282872b1 1 1 32 -1 0 0 -1 0 8 -2 PrimeWitness: 0
+284736e1 3 4 4 6 0 0 -4 0 1 -16 PrimeWitness: 0
+287399a1 1 1 3 -1 4 6 31 -6 -5 -7 PrimeWitness: 0
+287622by1 2 9 9 6 3 -10 -5 -9 3 3 PrimeWitness: 0
+287685e1 1 3 9 2 3 2 7 -9 -6 -3 PrimeWitness: 0
+287700bu2 1 4 8 3 6 2 13 -12 -36 -2 PrimeWitness: 0
+291785e1 1 5 11 2 0 -5 -5 0 -10 -9 PrimeWitness: 0
+293043d2 1 1 2 2 0 -3 -1 0 1 -9 PrimeWitness: 0
+294080t1 2 4 19 1 0 4 4 0 -1 -2 PrimeWitness: 0
+294464m2 1 2 4 -2 0 3 -3 0 4 0 PrimeWitness: 0
+296208bo1 7 11 18 0 6 15 35 -18 -24 -30 PrimeWitness: 0
+296784f1 3 4 4 4 0 -4 3 0 0 -6 PrimeWitness: 0
+297168l2 1 1 4 2 0 6 -1 0 0 -2 PrimeWitness: 0
+297945d1 1 1 3 0 1 2 7 -3 -2 -1 PrimeWitness: 0
+298200bs1 3 6 8 12 6 7 3 -12 12 10 PrimeWitness: 0
+298830y1 2 3 3 -3 0 -1 4 0 3 -7 PrimeWitness: 0
+298830y1 1 3 4 -2 0 1 4 0 0 -7 PrimeWitness: 0
+299122a2 1 2 16 1 3 -2 3 -12 -32 -3 PrimeWitness: 0
+299315a1 1 1 3 -1 0 4 4 0 2 2 PrimeWitness: 0
+30099c1 1 1 5 -1 0 2 3 0 -4 -6 PrimeWitness: 0
+30153h2 2 1 4 6 3 -8 -1 6 9 1 PrimeWitness: 0
+30612a1 1 1 11 -1 0 2 5 0 -5 -8 PrimeWitness: 0
+32262n1 1 1 2 -1 0 0 1 0 1 -3 PrimeWitness: 0
+34074f1 1 1 2 4 0 2 0 0 6 3 PrimeWitness: 0
+34200cn1 9 15 100 -6 0 -17 41 0 -80 30 PrimeWitness: 0
+34349b1 1 2 3 7 0 -1 2 0 26 3 PrimeWitness: 0
+35504d1 1 1 3 2 0 1 1 0 -1 -4 PrimeWitness: 0
+36090g1 1 2 12 -2 1 7 -1 6 14 -13 PrimeWitness: 0
+36099b1 2 12 27 5 9 3 38 -27 0 -18 PrimeWitness: 0
+36147a1 1 1 2 1 0 0 1 0 5 -2 PrimeWitness: 0
+36452a1 1 1 4 -2 0 -1 -3 0 2 -4 PrimeWitness: 0
+36858a2 1 1 10 1 0 -2 -4 0 2 -7 PrimeWitness: 0
+38007c1 1 1 9 2 0 -1 7 0 -6 3 PrimeWitness: 0
+38980c1 1 4 5 -1 0 -2 4 0 4 -8 PrimeWitness: 0
+40386e3 1 1 10 -1 0 -2 12 0 -6 1 PrimeWitness: 0
+41463b2 1 7 1 6 12 -2 12 -6 -3 -9 PrimeWitness: 0
+41664bh1 2 3 3 3 1 0 -7 3 3 -6 PrimeWitness: 0
+42944o2 1 9 24 0 0 -1 0 0 1 -18 PrimeWitness: 0
+42950c1 1 1 6 1 0 4 8 0 -10 3 PrimeWitness: 0
+46800v3 11 21 81 10 3 10 16 -27 45 -90 PrimeWitness: 0
+49752a1 1 1 9 1 3 4 19 -9 -21 0 PrimeWitness: 0
+49968t1 2 2 9 5 0 2 4 0 -6 0 PrimeWitness: 0
+50384a2 1 1 4 1 0 -1 -3 0 4 -6 PrimeWitness: 0
+52170k1 1 3 24 1 0 7 0 0 -10 1 PrimeWitness: 0
+55232e1 1 1 4 1 0 0 -1 0 0 -4 PrimeWitness: 0
+57670a2 1 33 50 4 6 2 37 -30 -40 -31 PrimeWitness: 0
+57936a1 1 1 3 3 0 1 -1 0 -6 -4 PrimeWitness: 0
+59244a1 2 5 16 4 3 -2 -21 12 20 -10 PrimeWitness: 0
+59775p1 3 2 3 3 1 6 9 -3 5 5 PrimeWitness: 0
+60656b2 1 2 4 1 12 0 13 -12 -4 -10 PrimeWitness: 0
+62268b1 1 1 3 -1 0 4 5 0 -5 -6 PrimeWitness: 0
+62268b1 1 1 4 -1 0 3 4 0 -5 -6 PrimeWitness: 0
+62920u1 1 11 16 1 0 1 19 0 8 -2 PrimeWitness: 0
+63120x1 1 2 2 0 0 0 -1 0 -2 -8 PrimeWitness: 0
+64338c1 1 1 4 0 3 1 6 -6 -3 -5 PrimeWitness: 0
+64368a1 1 1 3 1 1 2 7 -3 5 0 PrimeWitness: 0
+64434c1 1 1 4 0 3 1 6 -6 -7 -1 PrimeWitness: 0
+66018a1 2 2 4 1 3 -3 -1 6 10 -3 PrimeWitness: 0
+66150ew1 23 85 108 2 9 -33 -47 54 54 -153 PrimeWitness: 0
+66640l1 1 1 5 -5 0 -4 -5 0 -5 8 PrimeWitness: 0
+69824f1 1 2 4 0 0 -2 1 0 4 -4 PrimeWitness: 0
+70226b1 2 2 4 11 3 2 -13 6 24 5 PrimeWitness: 0
+70296k1 1 1 4 1 0 4 -1 0 0 -2 PrimeWitness: 0
+70296k1 1 2 3 2 0 -2 3 0 0 -2 PrimeWitness: 0
+71552b1 3 3 3 1 4 -5 3 6 10 2 PrimeWitness: 0
+71682e1 1 2 2 2 0 -1 -3 0 3 -5 PrimeWitness: 0
+73424d1 1 1 4 0 0 2 3 0 -4 -6 PrimeWitness: 0
+73666a1 1 1 4 1 0 -1 0 0 7 -3 PrimeWitness: 0
+77662f1 1 1 2 0 0 1 0 0 -1 -3 PrimeWitness: 0
+77673b1 1 1 3 -2 0 1 2 0 0 -5 PrimeWitness: 0
+77673b2 1 1 9 -1 0 0 4 0 0 -1 PrimeWitness: 0
+79170bc1 3 2 4 2 3 5 10 -6 7 3 PrimeWitness: 0
+80091e1 1 1 9 1 0 0 4 0 -3 -6 PrimeWitness: 0
+81360q2 1 16 24 -2 0 -3 15 0 4 -22 PrimeWitness: 0
+81806a1 1 1 3 1 1 3 8 -3 5 3 PrimeWitness: 0
+84216a4 2 8 3 47 1 -8 52 3 86 -14 PrimeWitness: 0
+85490g1 1 1 4 -1 0 0 1 0 5 -3 PrimeWitness: 0
+86050h1 1 2 10 2 0 -1 -6 0 14 -3 PrimeWitness: 0
+88560i1 1 2 2 4 0 -3 -3 0 6 -6 PrimeWitness: 0
+88706a2 1 1 1 -5 3 4 -4 -3 4 -15 PrimeWitness: 0
+90294f1 1 2 4 1 0 1 -1 0 -2 -3 PrimeWitness: 0
+90432bt1 1 4 2 3 6 0 7 -6 -2 -6 PrimeWitness: 0
+90864c1 2 2 27 2 0 1 -5 0 0 -12 PrimeWitness: 0
+92004h1 1 1 4 -1 0 1 3 0 -2 0 PrimeWitness: 0
+92428a1 2 2 3 2 1 -5 0 3 8 -4 PrimeWitness: 0
+94400bq1 1 3 100 1 0 -1 4 0 -15 0 PrimeWitness: 0
+94783b1 1 1 5 2 0 1 -2 0 3 -6 PrimeWitness: 0
+98702a1 1 2 6 2 2 2 9 -6 -1 -5 PrimeWitness: 0
+99021a1 1 1 5 -6 0 2 -3 0 -7 1 PrimeWitness: 0
+99594e2 8 36 12 8 49 -7 -51 -42 56 -1 PrimeWitness: 0
