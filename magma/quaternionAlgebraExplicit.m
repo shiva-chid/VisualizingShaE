@@ -186,7 +186,11 @@ Factorisation(pol);
 
 E := allEs[1];
 jE := jInvariant(E);
-assert &and[IsIsomorphic(E,x) : x in allEs[2..#allEs]];
+for x in allEs do
+    boo, isomE1tox := IsIsomorphic(E,x);
+    assert boo;
+    print isomE1tox;
+end for;
 Etors := TorsionSubgroup(E);
 if GCD(#Etors,2) eq 1 then printf "E has no rational 2-torsion.\n"; end if;
 Emwrk := MordellWeilRank(E);
