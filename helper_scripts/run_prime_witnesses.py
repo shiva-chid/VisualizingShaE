@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Wrapper script to run PrimeWitness computation with per-case timeouts.
+Wrapper script to run PrimeWitness computation on processed SHA3 equation files.
 
 Usage:
   python3 run_prime_witnesses.py <input_filename>
@@ -9,15 +9,12 @@ Where input_filename is just the filename (e.g., sha3eqns.00000-09999.processed.
 located in data/sha_order3_processed/
 
 To run in parallel:
-  ls data/sha_order3_processed | parallel -j30 "python3 run_prime_witnesses.py {}"
+  ls data/sha_order3_processed | parallel -j30 "python3 helper_scripts/run_prime_witnesses.py {}"
 """
 
 import os
 import sys
 import subprocess
-
-# Timeout in seconds for each case
-TIMEOUT_SECONDS = 5
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_DIR = os.path.join(PROJECT_ROOT, "data", "sha_order3_processed")
@@ -41,7 +38,7 @@ quit;
 def compute_prime_witness(coeffs_str):
     """
     Run Magma to compute prime witness for a single case.
-    Returns (prime, timed_out) where prime is int (0 on failure) and timed_out is bool.
+    Returns the prime as an int (0 on failure).
     """
     magma_code = MAGMA_SINGLE_CASE.format(coeffs=coeffs_str)
 
@@ -51,7 +48,6 @@ def compute_prime_witness(coeffs_str):
             input=magma_code,
             capture_output=True,
             text=True,
-            timeout=TIMEOUT_SECONDS,
             cwd=PROJECT_ROOT
         )
         # Parse the output - should be just the prime number
@@ -59,14 +55,11 @@ def compute_prime_witness(coeffs_str):
         # Get last non-empty line (in case there's other output)
         lines = [l.strip() for l in output.split('\n') if l.strip()]
         if lines:
-            return int(lines[-1]), False
-        return 0, False
-    except subprocess.TimeoutExpired:
-        print(f"TIMEOUT for input {coeffs_str}", file=sys.stderr)
-        return 0, True
+            return int(lines[-1])
+        return 0
     except Exception as e:
         print(f"FAILURE for input {coeffs_str}: {e}", file=sys.stderr)
-        return 0, False
+        return 0
 
 
 def process_file(input_filename):
@@ -87,12 +80,8 @@ def process_file(input_filename):
             coeffs_str = "[" + ", ".join(parts) + "]"
 
             print(f"Processing line {i}: {coeffs_str}")
-            p, timed_out = compute_prime_witness(coeffs_str)
-
-            if timed_out:
-                out.write(f"{line} PrimeWitness: {p} (timeout)\n")
-            else:
-                out.write(f"{line} PrimeWitness: {p}\n")
+            p = compute_prime_witness(coeffs_str)
+            out.write(f"{line} PrimeWitness: {p}\n")
             out.flush()  # Flush after each line so progress is visible
 
     print(f"Done processing {input_filename}")

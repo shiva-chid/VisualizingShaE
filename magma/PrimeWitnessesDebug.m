@@ -12,7 +12,6 @@
 PRIME_WITNESS_COMPUTATION_S := 0;
 
 RealInputFileName := "../data/sha_order3_processed/" cat InputFileName;
-OutputFileName := "../data/sha_order3_processed_witnessed/" cat "witnessed.notimeout." cat InputFileName;
 
 AttachSpec("spec");
 
@@ -47,36 +46,10 @@ for i -> MyLine in LinesOfInputFile do
     timed_out := false;
     p := 0;
     try
-        if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            Alarm(PRIME_WITNESS_COMPUTATION_S);
-        end if;
         p := PrimeWitnessFromCoefficients(L);
-        if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            Alarm(0);  // Clear the alarm
-        end if;
     catch e
-        if PRIME_WITNESS_COMPUTATION_S gt 0 then
-            Alarm(0);  // Clear the alarm
-        end if;
-        // Check if it was a timeout (alarm signal)
-        if "Alarm" in Sprint(e) then
-            printf "TIMEOUT for input %o\n", L;
-            timed_out := true;
-        else
-            printf "FAILURE for input %o: %o\n", L, e;
-        end if;
-        p := 0;
+        printf "FAILURE for input %o: %o\n", L, e;
     end try;
-    if timed_out then
-        to_print := MyLine cat " PrimeWitness: 0 (timeout)\n";
-    else
-        if Type(p) eq BoolElt then
-            to_print := MyLine cat " PrimeWitness: -1 (no witness found)\n";
-        else
-            to_print := MyLine cat " PrimeWitness: " cat IntegerToString(p) cat "\n";
-        end if;
-    end if;
-    fprintf OutputFileName, to_print;
 end for;
 
 quit;

@@ -9,7 +9,7 @@ keeping only the ternary cubic coefficient lines.
 import os
 import glob
 
-INPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha_order3_input")
+INPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha_order3_no3_iso")
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "sha_order3_processed")
 
 
