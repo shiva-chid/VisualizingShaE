@@ -84,6 +84,7 @@ of x^3 - a for a suitable a in K.}
     P<x> := PolynomialRing(Rationals());
     assert Degree(f) eq 3 and Coefficient(f,3) eq 1 and Coefficient(f,2) eq 0;
     a0 := Coefficient(f,0); a1 := Coefficient(f,1);
+    if a1 eq 0 then return IdentityMatrix(Rationals(),2); end if;
     discf := Discriminant(f);
     K, roots := SplittingField([x^2+x+1,x^2+3*discf] : Abs := true, Opt := true);
 /*
