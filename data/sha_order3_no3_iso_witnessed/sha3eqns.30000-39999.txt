@@ -14,7 +14,7 @@
 1 1 3 1 -2 5 5 1 4 4 PrimeWitness: 7
 1 2 3 -1 -2 3 5 -1 3 -2 PrimeWitness: 7
 1 1 5 2 1 0 -4 2 3 -4 PrimeWitness: 37
-1 1 5 -1 0 2 3 0 -4 -6 PrimeWitness: 0
+1 1 5 -1 0 2 3 0 -4 -6 PrimeWitness: 13
 
 30141 b 1 [0,0,1,-711,-7297] 0 1 9
 1 1 3 2 1 -2 -5 4 10 -2 PrimeWitness: 19
@@ -37,7 +37,7 @@
 30153 h 2 [1,0,1,-3450,-70769] 0 4 9
 1 1 4 4 1 -2 -8 3 14 -11 PrimeWitness: 31
 1 2 9 1 6 1 2 -12 -12 -7 PrimeWitness: 73
-2 1 4 6 3 -8 -1 6 9 1 PrimeWitness: 0
+2 1 4 6 3 -8 -1 6 9 1 PrimeWitness: 13
 1 4 1 2 -10 -2 -9 2 -3 3 PrimeWitness: 43
 
 30153 h 3 [1,0,1,4485,-346907] 0 2 9
@@ -293,7 +293,7 @@
 8 18 191 -4 -12 3 0 30 30 -90 PrimeWitness: 13
 
 30612 a 1 [0,-1,0,-849,-9282] 0 2 9
-1 1 11 -1 0 2 5 0 -5 -8 PrimeWitness: 0
+1 1 11 -1 0 2 5 0 -5 -8 PrimeWitness: 7
 1 4 1 1 0 -5 -1 3 8 -4 PrimeWitness: 19
 1 3 2 4 6 3 4 -5 -4 2 PrimeWitness: 19
 1 3 4 0 -1 4 8 -2 0 -4 PrimeWitness: 19
@@ -1002,7 +1002,7 @@
 
 32262 n 1 [1,0,0,-27,-57] 0 1 9
 1 1 1 0 0 -1 0 1 2 -3 PrimeWitness: 7
-1 1 2 -1 0 0 1 0 1 -3 PrimeWitness: 0
+1 1 2 -1 0 0 1 0 1 -3 PrimeWitness: 7
 1 1 2 -1 -2 1 2 0 2 -1 PrimeWitness: 67
 1 1 1 -2 1 1 1 3 2 1 PrimeWitness: 43
 
@@ -1693,7 +1693,7 @@
 34074 f 1 [1,-1,1,-83,-755] 0 1 9
 1 1 2 -1 1 2 2 4 0 -7 PrimeWitness: 13
 1 1 2 4 0 0 2 -2 6 -3 PrimeWitness: 43
-1 1 2 4 0 2 0 0 6 3 PrimeWitness: 0
+1 1 2 4 0 2 0 0 6 3 PrimeWitness: 7
 1 1 2 2 2 5 1 6 4 5 PrimeWitness: 31
 
 34092 a 1 [0,0,0,2112,10685] 0 2 9
@@ -1766,7 +1766,7 @@
 2 9 89 24 29 36 21 4 28 -12 PrimeWitness: 37
 3 16 103 5 18 41 -9 -15 -18 18 PrimeWitness: 31
 8 22 7 33 26 18 35 6 76 -52 PrimeWitness: 31
-9 15 100 -6 0 -17 41 0 -80 30 PrimeWitness: 0
+9 15 100 -6 0 -17 41 0 -80 30 PrimeWitness: 31
 
 34200 cn 2 [0,0,0,-16542075,-15945610250] 0 2 9
 1 12 55 41 76 -29 -73 51 -22 -6 PrimeWitness: 37
@@ -1793,7 +1793,7 @@
 1 8 5 10 11 -3 -1 -1 -7 -6 PrimeWitness: 7
 
 34349 b 1 [1,0,1,-11100,-499411] 0 2 9
-1 2 3 7 0 -1 2 0 26 3 PrimeWitness: 0
+1 2 3 7 0 -1 2 0 26 3 PrimeWitness: 13
 3 7 5 7 10 4 8 -9 -2 -1 PrimeWitness: 43
 1 9 9 0 -1 -4 17 10 37 5 PrimeWitness: 13
 3 3 11 6 4 7 6 -12 -8 -7 PrimeWitness: 13
@@ -2431,7 +2431,7 @@
 35504 d 1 [0,0,0,-52,-292] 0 1 9
 1 1 1 -2 1 2 0 5 -1 0 PrimeWitness: 31
 1 1 2 2 1 1 -3 0 5 -2 PrimeWitness: 13
-1 1 3 2 0 1 1 0 -1 -4 PrimeWitness: 0
+1 1 3 2 0 1 1 0 -1 -4 PrimeWitness: 19
 1 1 4 -1 1 1 2 -3 1 -2 PrimeWitness: 73
 
 35520 bq 1 [0,-1,0,-54081,-16646175] 0 2 9
@@ -2561,7 +2561,7 @@
 6 24 368 -20 -43 59 91 140 8 -73 PrimeWitness: 31
 
 36090 g 1 [1,-1,0,-1575,-263939] 0 1 9
-1 2 12 -2 1 7 -1 6 14 -13 PrimeWitness: 0
+1 2 12 -2 1 7 -1 6 14 -13 PrimeWitness: 7
 5 4 1 -4 -11 -1 0 11 6 13 PrimeWitness: 19
 2 6 7 4 -1 -1 5 10 10 -5 PrimeWitness: 37
 1 2 15 3 4 0 9 5 -6 -15 PrimeWitness: 37
@@ -2575,14 +2575,14 @@
 36099 b 1 [0,0,1,-228366,-42958654] 0 1 9
 1 19 16 -2 0 -1 -21 33 73 -22 PrimeWitness: 37
 10 13 14 27 1 19 -20 0 -1 -32 PrimeWitness: 31
-2 12 27 5 9 3 38 -27 0 -18 PrimeWitness: 0
+2 12 27 5 9 3 38 -27 0 -18 PrimeWitness: 13
 4 7 11 20 11 -13 -15 -1 18 -8 PrimeWitness: 19
 
 36147 a 1 [0,-1,1,-16,-81] 0 1 9
 1 1 1 1 2 0 -1 5 3 0 PrimeWitness: 67
 1 1 1 0 1 -1 1 0 5 0 PrimeWitness: 7
 1 1 1 2 -1 0 2 0 5 -2 PrimeWitness: 31
-1 1 2 1 0 0 1 0 5 -2 PrimeWitness: 0
+1 1 2 1 0 0 1 0 5 -2 PrimeWitness: 7
 
 36162 cc 1 [1,-1,1,-11255,-1834927] 0 1 9
 1 3 10 2 1 15 -10 17 8 3 PrimeWitness: 43
@@ -2694,7 +2694,7 @@
 
 36452 a 1 [0,-1,0,-177,350] 0 2 9
 1 1 1 2 0 0 3 -5 1 -8 PrimeWitness: 19
-1 1 4 -2 0 -1 -3 0 2 -4 PrimeWitness: 0
+1 1 4 -2 0 -1 -3 0 2 -4 PrimeWitness: 7
 1 1 2 1 -1 -2 -3 -1 -4 -6 PrimeWitness: 19
 1 2 1 -1 0 2 -3 -5 -3 2 PrimeWitness: 19
 
@@ -2772,7 +2772,7 @@
 
 36858 a 2 [1,1,1,-736,-7009] 0 2 9
 1 1 2 0 4 1 5 -4 -6 -9 PrimeWitness: 43
-1 1 10 1 0 -2 -4 0 2 -7 PrimeWitness: 0
+1 1 10 1 0 -2 -4 0 2 -7 PrimeWitness: 19
 1 3 2 2 4 2 0 -4 -4 -5 PrimeWitness: 7
 1 3 1 2 1 -5 -2 3 5 -7 PrimeWitness: 43
 
@@ -3152,7 +3152,7 @@
 1 1 5 4 4 6 4 1 6 1 PrimeWitness: 13
 1 4 1 1 -4 -3 5 -3 8 -3 PrimeWitness: 43
 1 3 1 3 -2 3 -2 4 7 5 PrimeWitness: 19
-1 1 9 2 0 -1 7 0 -6 3 PrimeWitness: 0
+1 1 9 2 0 -1 7 0 -6 3 PrimeWitness: 7
 
 38007 c 2 [1,-1,0,-3096,-43493] 0 4 9
 1 1 9 6 6 4 -5 0 6 9 PrimeWitness: 37
@@ -3625,7 +3625,7 @@
 38980 c 1 [0,-1,0,-641,-6034] 0 2 9
 1 2 3 4 1 -5 0 -1 6 -8 PrimeWitness: 61
 1 2 5 2 3 -1 -1 -1 -3 -6 PrimeWitness: 13
-1 4 5 -1 0 -2 4 0 4 -8 PrimeWitness: 0
+1 4 5 -1 0 -2 4 0 4 -8 PrimeWitness: 7
 2 2 4 3 1 2 1 -6 -2 -6 PrimeWitness: 19
 
 38980 c 2 [0,-1,0,-516,-8584] 0 2 9
